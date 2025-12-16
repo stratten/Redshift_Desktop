@@ -1,0 +1,8 @@
+
+# Bundled Python runtime
+resources/python/
+resources/python-deps/
+
+# Build artifacts
+dist/
+builds/

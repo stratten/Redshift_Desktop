@@ -1,0 +1,564 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               Redshift [82395]
+Path:                  /Users/USER/Desktop/*/Redshift.app/Contents/MacOS/Redshift
+Identifier:            com.redshift.app
+Version:               1.0.0 (1.0.0)
+Code Type:             ARM-64 (Native)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2025-10-27 13:52:49.8970 -0400
+OS Version:            macOS 15.7 (24G210)
+Report Version:        12
+Anonymous UUID:        95812A79-2E82-8A0F-E07C-443EF60ADCD3
+
+Sleep/Wake UUID:       060CD05E-D14F-429B-A6C5-34154FDC0EC1
+
+Time Awake Since Boot: 1700000 seconds
+Time Since Wake:       24044 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  CrBrowserMain  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BREAKPOINT (SIGTRAP)
+Exception Codes:       0x0000000000000001, 0x000000010ce5fdd8
+
+Termination Reason:    Namespace SIGNAL, Code 5 Trace/BPT trap: 5
+Terminating Process:   exc handler [82395]
+
+Thread 0 Crashed:: CrBrowserMain Dispatch queue: com.apple.main-thread
+0   Electron Framework            	       0x10ce5fdd8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 34414696
+1   Electron Framework            	       0x10ce5fa64 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 34413812
+2   Electron Framework            	       0x108eebbd8 v8::ValueSerializer::Delegate::HasCustomHostObject(v8::Isolate*) + 6840
+3   Electron Framework            	       0x108fcb7f8 v8::internal::compiler::SLVerifierHintParametersOf(v8::internal::compiler::Operator const*) + 69928
+4   Electron Framework            	       0x10b145c28 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 3899064
+5   Electron Framework            	       0x10b664e1c v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 9269420
+6   Electron Framework            	       0x10b145f8c v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 3899932
+7   Electron Framework            	       0x10b1485c4 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 3909716
+8   Electron Framework            	       0x10b144a60 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 3894512
+9   Electron Framework            	       0x1091e09f4 v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*) + 13756
+10  Electron Framework            	       0x1091e18c8 v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*) + 17552
+11  Electron Framework            	       0x1091e1718 v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*) + 17120
+12  Electron Framework            	       0x1091e02e0 v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*) + 11944
+13  Electron Framework            	       0x1091e03f0 v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*) + 12216
+14  Electron Framework            	       0x108ee83cc ElectronMain + 128
+15  dyld                          	       0x19dbbeb98 start + 6076
+
+Thread 1:: ThreadPoolServiceThread
+0   libsystem_kernel.dylib        	       0x19df2995c kevent64 + 8
+1   Electron Framework            	       0x10bfe4084 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19227412
+2   Electron Framework            	       0x10bfe3838 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19225288
+3   Electron Framework            	       0x10bf96c68 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18910968
+4   Electron Framework            	       0x10bf62f78 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18698760
+5   Electron Framework            	       0x10bfb5548 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036120
+6   Electron Framework            	       0x10bf9ef70 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18944512
+7   Electron Framework            	       0x10bfb56e0 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036528
+8   Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+9   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+10  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 2:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x19df1dc34 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x19df303a0 mach_msg2_internal + 76
+2   libsystem_kernel.dylib        	       0x19df26764 mach_msg_overwrite + 484
+3   libsystem_kernel.dylib        	       0x19df1dfa8 mach_msg + 24
+4   Electron Framework            	       0x10bfdd8d8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19200872
+5   Electron Framework            	       0x10bf7bc08 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18800280
+6   Electron Framework            	       0x10bfadc14 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19005092
+7   Electron Framework            	       0x10bfae55c v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19007468
+8   Electron Framework            	       0x10bfae348 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006936
+9   Electron Framework            	       0x10bfae220 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006640
+10  Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+11  libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+12  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 3:: ThreadPoolBackgroundWorker
+0   libsystem_kernel.dylib        	       0x19df1dc34 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x19df303a0 mach_msg2_internal + 76
+2   libsystem_kernel.dylib        	       0x19df26764 mach_msg_overwrite + 484
+3   libsystem_kernel.dylib        	       0x19df1dfa8 mach_msg + 24
+4   Electron Framework            	       0x10bfdd8d8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19200872
+5   Electron Framework            	       0x10bf7bc08 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18800280
+6   Electron Framework            	       0x10bfadc14 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19005092
+7   Electron Framework            	       0x10bfae4c8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19007320
+8   Electron Framework            	       0x10bfae2c4 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006804
+9   Electron Framework            	       0x10bfae254 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006692
+10  Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+11  libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+12  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 4:: ThreadPoolForegroundWorker
+0   libsystem_kernel.dylib        	       0x19df1dc34 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x19df303a0 mach_msg2_internal + 76
+2   libsystem_kernel.dylib        	       0x19df26764 mach_msg_overwrite + 484
+3   libsystem_kernel.dylib        	       0x19df1dfa8 mach_msg + 24
+4   Electron Framework            	       0x10bfdd8d8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19200872
+5   Electron Framework            	       0x10bf7bc08 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18800280
+6   Electron Framework            	       0x10bfadc14 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19005092
+7   Electron Framework            	       0x10bfae4c8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19007320
+8   Electron Framework            	       0x10bfae348 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006936
+9   Electron Framework            	       0x10bfae220 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19006640
+10  Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+11  libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+12  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 5:: Chrome_IOThread
+0   libsystem_kernel.dylib        	       0x19df2995c kevent64 + 8
+1   Electron Framework            	       0x10bfe4084 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19227412
+2   Electron Framework            	       0x10bfe3838 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19225288
+3   Electron Framework            	       0x10bf96c68 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18910968
+4   Electron Framework            	       0x10bf62f78 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18698760
+5   Electron Framework            	       0x10bfb5548 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036120
+6   Electron Framework            	       0x10b149630 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 3913920
+7   Electron Framework            	       0x10bfb56e0 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036528
+8   Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+9   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+10  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 6:: MemoryInfra
+0   libsystem_kernel.dylib        	       0x19df1dc34 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x19df303a0 mach_msg2_internal + 76
+2   libsystem_kernel.dylib        	       0x19df26764 mach_msg_overwrite + 484
+3   libsystem_kernel.dylib        	       0x19df1dfa8 mach_msg + 24
+4   Electron Framework            	       0x10bfdd8d8 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19200872
+5   Electron Framework            	       0x10bf7bb00 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18800016
+6   Electron Framework            	       0x10bf3d874 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18545412
+7   Electron Framework            	       0x10bf96c68 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18910968
+8   Electron Framework            	       0x10bf62f78 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18698760
+9   Electron Framework            	       0x10bfb5548 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036120
+10  Electron Framework            	       0x10bfb56e0 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036528
+11  Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+12  libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+13  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 7:
+0   libsystem_kernel.dylib        	       0x19df23d04 kevent + 8
+1   Electron Framework            	       0x108ee7e14 uv_free_interface_addresses + 2204
+2   Electron Framework            	       0x108ed6fcc uv_run + 272
+3   Electron Framework            	       0x10f7964ac node::OnFatalError(char const*, char const*) + 447996
+4   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+5   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 8:
+0   libsystem_kernel.dylib        	       0x19df213cc __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x19df6009c _pthread_cond_wait + 984
+2   Electron Framework            	       0x108ee2a70 uv_cond_wait + 12
+3   Electron Framework            	       0x10f79435c node::OnFatalError(char const*, char const*) + 439468
+4   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+5   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 9:
+0   libsystem_kernel.dylib        	       0x19df213cc __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x19df6009c _pthread_cond_wait + 984
+2   Electron Framework            	       0x108ee2a70 uv_cond_wait + 12
+3   Electron Framework            	       0x10f79435c node::OnFatalError(char const*, char const*) + 439468
+4   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+5   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 10:
+0   libsystem_kernel.dylib        	       0x19df213cc __psynch_cvwait + 8
+1   libsystem_pthread.dylib       	       0x19df6009c _pthread_cond_wait + 984
+2   Electron Framework            	       0x108ee2a70 uv_cond_wait + 12
+3   Electron Framework            	       0x10f79435c node::OnFatalError(char const*, char const*) + 439468
+4   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+5   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 11:
+0   libsystem_kernel.dylib        	       0x19df1dbb0 semaphore_wait_trap + 8
+1   Electron Framework            	       0x108ee3088 uv_sem_wait + 24
+2   Electron Framework            	       0x10f8245cc node::SetTracingController(v8::TracingController*) + 71952
+3   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+4   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 12:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 13:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 14:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 15:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 16:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 17:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 18:
+0   libsystem_pthread.dylib       	       0x19df5ab6c start_wqthread + 0
+
+Thread 19:: NetworkConfigWatcher
+0   libsystem_kernel.dylib        	       0x19df1dc34 mach_msg2_trap + 8
+1   libsystem_kernel.dylib        	       0x19df303a0 mach_msg2_internal + 76
+2   libsystem_kernel.dylib        	       0x19df26764 mach_msg_overwrite + 484
+3   libsystem_kernel.dylib        	       0x19df1dfa8 mach_msg + 24
+4   CoreFoundation                	       0x19e04acbc __CFRunLoopServiceMachPort + 160
+5   CoreFoundation                	       0x19e0495d8 __CFRunLoopRun + 1208
+6   CoreFoundation                	       0x19e048a98 CFRunLoopRunSpecific + 572
+7   Foundation                    	       0x19f618c78 -[NSRunLoop(NSRunLoop) runMode:beforeDate:] + 212
+8   Electron Framework            	       0x10bfdaab4 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19189060
+9   Electron Framework            	       0x10bfd8d38 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19181512
+10  Electron Framework            	       0x10bf96c68 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18910968
+11  Electron Framework            	       0x10bf62f78 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 18698760
+12  Electron Framework            	       0x10bfb5548 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036120
+13  Electron Framework            	       0x10bfb56e0 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19036528
+14  Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+15  libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+16  libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+Thread 20:: CrShutdownDetector
+0   libsystem_kernel.dylib        	       0x19df1e7dc read + 8
+1   Electron Framework            	       0x1090af198 node::FreeArrayBufferAllocator(node::ArrayBufferAllocator*) + 268444
+2   Electron Framework            	       0x10bfc8494 v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool) + 19113764
+3   libsystem_pthread.dylib       	       0x19df5fbc8 _pthread_start + 136
+4   libsystem_pthread.dylib       	       0x19df5ab80 thread_start + 8
+
+
+Thread 0 crashed with ARM Thread State (64-bit):
+    x0: 0x0000000000000000   x1: 0x000000010009e400   x2: 0x00000001380c0b90   x3: 0x000000000000000c
+    x4: 0x00000001380c0b90   x5: 0x000000000000000c   x6: 0x0000000000000002   x7: 0x0000000000000240
+    x8: 0x0000000000000000   x9: 0x0000000000000103  x10: 0x0000000000179f41  x11: 0x000000000001faf0
+   x12: 0x0000000138003f54  x13: 0x000000010009e420  x14: 0x0000000000000009  x15: 0x00000000e8002007
+   x16: 0xd796000100090080  x17: 0x0000000000000000  x18: 0x0000000000000000  x19: 0x000000016fd96480
+   x20: 0x000000016fd96498  x21: 0x0000000108b62b80  x22: 0x0000000000000001  x23: 0x0000000138055ad0
+   x24: 0x0000000111295000  x25: 0x0000000108b79e70  x26: 0x0000000000000000  x27: 0x0000000000000000
+   x28: 0x0000000000000000   fp: 0x000000016fd96380   lr: 0x000000010ce5fcf4
+    sp: 0x000000016fd961f0   pc: 0x000000010ce5fdd8 cpsr: 0x60001000
+   far: 0x0000000000000000  esr: 0xf2000000 (Breakpoint) brk 0
+
+Binary Images:
+       0x100068000 -        0x10006bfff Redshift (*) <4c4c4432-5555-3144-a145-3eba182755c0> /Users/USER/Desktop/*/Redshift.app/Contents/MacOS/Redshift
+       0x108c94000 -        0x110cd7fff Electron Framework (*) <4c4c44fc-5555-3144-a1ce-173e9c31a954> /Users/USER/Desktop/*/Redshift.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+       0x1000a8000 -        0x1000bbfff Squirrel (*) <4c4c44e1-5555-3144-a1eb-22f5d4af44d8> /Users/USER/Desktop/*/Redshift.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
+       0x100130000 -        0x10016ffff ReactiveObjC (*) <4c4c44ea-5555-3144-a15c-efd8583abacd> /Users/USER/Desktop/*/Redshift.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
+       0x1000d0000 -        0x1000dbfff Mantle (*) <4c4c4423-5555-3144-a126-fe061167e081> /Users/USER/Desktop/*/Redshift.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
+       0x1004e0000 -        0x1006c3fff libffmpeg.dylib (*) <4c4c44d5-5555-3144-a145-1e9533a1150e> /Users/USER/Desktop/*/Redshift.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
+       0x1008c8000 -        0x1008d3fff libobjc-trampolines.dylib (*) <9a87f143-aa9d-3c46-b2e8-b3fb9215e33e> /usr/lib/libobjc-trampolines.dylib
+       0x116244000 -        0x1168dbfff com.apple.AGXMetalG13X (329.2) <8c8ae16c-b243-3b2e-99f0-4574f8854540> /System/Library/Extensions/AGXMetalG13X.bundle/Contents/MacOS/AGXMetalG13X
+       0x19dbb8000 -        0x19dc5357b dyld (*) <851b1f2e-d3b1-38f2-bcba-b3adc1efb084> /usr/lib/dyld
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+       0x19df1d000 -        0x19df58663 libsystem_kernel.dylib (*) <8d4aaa09-ba94-3024-bc0e-7a7a7acb2b08> /usr/lib/system/libsystem_kernel.dylib
+       0x19df59000 -        0x19df65a77 libsystem_pthread.dylib (*) <022dc315-cf35-38da-939e-03800b5beff2> /usr/lib/system/libsystem_pthread.dylib
+       0x19dfce000 -        0x19e50cfff com.apple.CoreFoundation (6.9) <5f26d62a-28d7-31f0-995c-f33fa9b95aa2> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+       0x19f5bf000 -        0x1a03a859f com.apple.Foundation (6.9) <186c53da-a25e-3835-a8bb-409faf53e4e7> /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=1.8G resident=0K(0%) swapped_out_or_unallocated=1.8G(100%)
+Writable regions: Total=1.8G written=1140K(0%) resident=948K(0%) swapped_out=192K(0%) unallocated=1.8G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               128K        1 
+Activity Tracing                   256K        1 
+CG image                           208K        5 
+ColorSync                          624K       33 
+CoreAnimation                     21.9M       35 
+CoreGraphics                        64K        4 
+CoreUI image data                  960K        7 
+Dispatch continuations            80.0M        1 
+Foundation                         144K        3 
+Kernel Alloc Once                   64K        2 
+MALLOC                             1.4G       74 
+MALLOC guard page                  288K       18 
+Memory Tag 253                    32.0G        2 
+Memory Tag 255                     1.1T       91 
+Memory Tag 255 (reserved)          128K        2         reserved VM address space (unallocated)
+STACK GUARD                       56.3M       21 
+Stack                            100.0M       21 
+VM_ALLOCATE                        128K        5 
+__AUTH                            6046K      721 
+__AUTH_CONST                      80.0M      970 
+__CTF                               824        1 
+__DATA                            30.9M      954 
+__DATA_CONST                      33.2M      984 
+__DATA_DIRTY                      2782K      347 
+__FONT_DATA                        2352        1 
+__INFO_FILTER                         8        1 
+__LINKEDIT                       622.3M        9 
+__OBJC_RO                         61.4M        1 
+__OBJC_RW                         2396K        1 
+__TEXT                             1.2G     1005 
+__TPRO_CONST                       128K        2 
+mapped file                      268.6M       48 
+page table in kernel               948K        1 
+shared memory                      896K       15 
+===========                     =======  ======= 
+TOTAL                              1.1T     5387 
+TOTAL, minus reserved VM space     1.1T     5387 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"Redshift","timestamp":"2025-10-27 13:53:05.00 -0400","app_version":"1.0.0","slice_uuid":"4c4c4432-5555-3144-a145-3eba182755c0","build_version":"1.0.0","platform":1,"bundleID":"com.redshift.app","share_with_app_devs":0,"is_first_party":0,"bug_type":"309","os_version":"macOS 15.7 (24G210)","roots_installed":0,"name":"Redshift","incident_id":"41E8A3E3-7407-4BE3-B838-963437E18369"}
+{
+  "uptime" : 1700000,
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookPro18,2",
+  "coalitionID" : 545216,
+  "osVersion" : {
+    "train" : "macOS 15.7",
+    "build" : "24G210",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2025-10-27 13:52:49.8970 -0400",
+  "codeSigningMonitor" : 1,
+  "incident" : "41E8A3E3-7407-4BE3-B838-963437E18369",
+  "pid" : 82395,
+  "translated" : false,
+  "cpuType" : "ARM-64",
+  "roots_installed" : 0,
+  "bug_type" : "309",
+  "procLaunch" : "2025-10-27 13:41:03.0611 -0400",
+  "procStartAbsTime" : 42318821094942,
+  "procExitAbsTime" : 42335773112054,
+  "procName" : "Redshift",
+  "procPath" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/MacOS\/Redshift",
+  "bundleInfo" : {"CFBundleShortVersionString":"1.0.0","CFBundleVersion":"1.0.0","CFBundleIdentifier":"com.redshift.app"},
+  "storeInfo" : {"deviceIdentifierForVendor":"3CFEEB8D-D97B-58DC-8E08-50319B3FA380","thirdParty":true},
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.redshift.app",
+  "crashReporterKey" : "95812A79-2E82-8A0F-E07C-443EF60ADCD3",
+  "appleIntelligenceStatus" : {"state":"unavailable","reasons":["notOptedIn","assetIsNotReady"]},
+  "codeSigningID" : "com.redshift.app",
+  "codeSigningTeamID" : "D4X8TSBQJC",
+  "codeSigningFlags" : 570491649,
+  "codeSigningValidationCategory" : 6,
+  "codeSigningTrustLevel" : 4294967295,
+  "codeSigningAuxiliaryInfo" : 0,
+  "instructionByteStream" : {"beforePC":"PwEAcakjAdGqr3upQbGJmggZQJJisYia\/zYCl+ADAJHjX8OX1f\/\/Fw==","atPC":"AAAg1AAAQNQgACDUaCoC0AhNQ\/kfAQDx4AefGsADX9ZoKgLQAE1D+Q=="},
+  "bootSessionUUID" : "04E098AF-51F6-474C-BA27-33EEBB7D6023",
+  "wakeTime" : 24044,
+  "sleepWakeUUID" : "060CD05E-D14F-429B-A6C5-34154FDC0EC1",
+  "sip" : "enabled",
+  "exception" : {"codes":"0x0000000000000001, 0x000000010ce5fdd8","rawCodes":[1,4511366616],"type":"EXC_BREAKPOINT","signal":"SIGTRAP"},
+  "termination" : {"flags":0,"code":5,"namespace":"SIGNAL","indicator":"Trace\/BPT trap: 5","byProc":"exc handler","byPid":82395},
+  "os_fault" : {"process":"Redshift"},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"threadState":{"x":[{"value":0},{"value":4295615488},{"value":5235280784},{"value":12},{"value":5235280784},{"value":12},{"value":2},{"value":576},{"value":0},{"value":259},{"value":1548097},{"value":129776},{"value":5234507604},{"value":4295615520},{"value":9},{"value":3892322311},{"value":15534603968956661888},{"value":0},{"value":0},{"value":6171485312},{"value":6171485336},{"value":4441123712},{"value":1},{"value":5234842320},{"value":4582887424,"symbolLocation":20424,"symbol":"v8_inspector::protocol::Debugger::API::Paused::ReasonEnum::Step"},{"value":4441218672},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4511366388},"cpsr":{"value":1610616832},"fp":{"value":6171485056},"sp":{"value":6171484656},"esr":{"value":4060086272,"description":"(Breakpoint) brk 0"},"pc":{"value":4511366616,"matchesCrashFrame":1},"far":{"value":0}},"id":107505635,"triggered":true,"name":"CrBrowserMain","queue":"com.apple.main-thread","frames":[{"imageOffset":68992472,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":34414696,"imageIndex":1},{"imageOffset":68991588,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":34413812,"imageIndex":1},{"imageOffset":2456536,"symbol":"v8::ValueSerializer::Delegate::HasCustomHostObject(v8::Isolate*)","symbolLocation":6840,"imageIndex":1},{"imageOffset":3373048,"symbol":"v8::internal::compiler::SLVerifierHintParametersOf(v8::internal::compiler::Operator const*)","symbolLocation":69928,"imageIndex":1},{"imageOffset":38476840,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":3899064,"imageIndex":1},{"imageOffset":43847196,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":9269420,"imageIndex":1},{"imageOffset":38477708,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":3899932,"imageIndex":1},{"imageOffset":38487492,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":3909716,"imageIndex":1},{"imageOffset":38472288,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":3894512,"imageIndex":1},{"imageOffset":5556724,"symbol":"v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*)","symbolLocation":13756,"imageIndex":1},{"imageOffset":5560520,"symbol":"v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*)","symbolLocation":17552,"imageIndex":1},{"imageOffset":5560088,"symbol":"v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*)","symbolLocation":17120,"imageIndex":1},{"imageOffset":5554912,"symbol":"v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*)","symbolLocation":11944,"imageIndex":1},{"imageOffset":5555184,"symbol":"v8::internal::compiler::BasicBlock::set_loop_header(v8::internal::compiler::BasicBlock*)","symbolLocation":12216,"imageIndex":1},{"imageOffset":2442188,"symbol":"ElectronMain","symbolLocation":128,"imageIndex":1},{"imageOffset":27544,"symbol":"start","symbolLocation":6076,"imageIndex":8}]},{"id":107506096,"name":"ThreadPoolServiceThread","threadState":{"x":[{"value":4},{"value":0},{"value":0},{"value":5237683200},{"value":1},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":1763990542875},{"value":1},{"value":27651},{"value":0},{"value":547880960},{"value":369},{"value":6182187008},{"value":0},{"value":5215710192},{"value":5237681744},{"value":0},{"value":6182186288},{"value":12297829382473034411},{"value":5215710360},{"value":1},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4496179332},"cpsr":{"value":2684358656},"fp":{"value":6182186240},"sp":{"value":6182186016},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944889180},"far":{"value":0}},"frames":[{"imageOffset":51548,"symbol":"kevent64","symbolLocation":8,"imageIndex":10},{"imageOffset":53805188,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19227412,"imageIndex":1},{"imageOffset":53803064,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19225288,"imageIndex":1},{"imageOffset":53488744,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18910968,"imageIndex":1},{"imageOffset":53276536,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18698760,"imageIndex":1},{"imageOffset":53613896,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036120,"imageIndex":1},{"imageOffset":53522288,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18944512,"imageIndex":1},{"imageOffset":53614304,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036528,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506097,"name":"ThreadPoolForegroundWorker","threadState":{"x":[{"value":268451845},{"value":17179869186},{"value":0},{"value":117660629073920},{"value":0},{"value":117660629073920},{"value":32},{"value":0},{"value":0},{"value":17179869184},{"value":32},{"value":0},{"value":0},{"value":0},{"value":27395},{"value":211820801},{"value":18446744073709551569},{"value":0},{"value":0},{"value":0},{"value":32},{"value":117660629073920},{"value":0},{"value":117660629073920},{"value":6190607616},{"value":0},{"value":17179869186},{"value":18446744073709550527},{"value":2}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6944916384},"cpsr":{"value":4096},"fp":{"value":6190606960},"sp":{"value":6190606880},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840756},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":78752,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":10},{"imageOffset":38756,"symbol":"mach_msg_overwrite","symbolLocation":484,"imageIndex":10},{"imageOffset":4008,"symbol":"mach_msg","symbolLocation":24,"imageIndex":10},{"imageOffset":53778648,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19200872,"imageIndex":1},{"imageOffset":53378056,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18800280,"imageIndex":1},{"imageOffset":53582868,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19005092,"imageIndex":1},{"imageOffset":53585244,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19007468,"imageIndex":1},{"imageOffset":53584712,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006936,"imageIndex":1},{"imageOffset":53584416,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006640,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506098,"name":"ThreadPoolBackgroundWorker","threadState":{"x":[{"value":268451845},{"value":17179869186},{"value":0},{"value":113262582562816},{"value":0},{"value":113262582562816},{"value":32},{"value":0},{"value":0},{"value":17179869184},{"value":32},{"value":0},{"value":0},{"value":0},{"value":26371},{"value":16641},{"value":18446744073709551569},{"value":5235834832},{"value":0},{"value":0},{"value":32},{"value":113262582562816},{"value":0},{"value":113262582562816},{"value":6199028992},{"value":0},{"value":17179869186},{"value":18446744073709550527},{"value":2}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6944916384},"cpsr":{"value":4096},"fp":{"value":6199028336},"sp":{"value":6199028256},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840756},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":78752,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":10},{"imageOffset":38756,"symbol":"mach_msg_overwrite","symbolLocation":484,"imageIndex":10},{"imageOffset":4008,"symbol":"mach_msg","symbolLocation":24,"imageIndex":10},{"imageOffset":53778648,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19200872,"imageIndex":1},{"imageOffset":53378056,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18800280,"imageIndex":1},{"imageOffset":53582868,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19005092,"imageIndex":1},{"imageOffset":53585096,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19007320,"imageIndex":1},{"imageOffset":53584580,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006804,"imageIndex":1},{"imageOffset":53584468,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006692,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506099,"name":"ThreadPoolForegroundWorker","threadState":{"x":[{"value":268451845},{"value":17179869186},{"value":0},{"value":109998407417856},{"value":0},{"value":109998407417856},{"value":32},{"value":0},{"value":0},{"value":17179869184},{"value":32},{"value":0},{"value":0},{"value":0},{"value":25611},{"value":80224},{"value":18446744073709551569},{"value":5215714832},{"value":0},{"value":0},{"value":32},{"value":109998407417856},{"value":0},{"value":109998407417856},{"value":6207450368},{"value":0},{"value":17179869186},{"value":18446744073709550527},{"value":2}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6944916384},"cpsr":{"value":4096},"fp":{"value":6207449712},"sp":{"value":6207449632},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840756},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":78752,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":10},{"imageOffset":38756,"symbol":"mach_msg_overwrite","symbolLocation":484,"imageIndex":10},{"imageOffset":4008,"symbol":"mach_msg","symbolLocation":24,"imageIndex":10},{"imageOffset":53778648,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19200872,"imageIndex":1},{"imageOffset":53378056,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18800280,"imageIndex":1},{"imageOffset":53582868,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19005092,"imageIndex":1},{"imageOffset":53585096,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19007320,"imageIndex":1},{"imageOffset":53584712,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006936,"imageIndex":1},{"imageOffset":53584416,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19006640,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506101,"name":"Chrome_IOThread","threadState":{"x":[{"value":4},{"value":0},{"value":0},{"value":4948292784},{"value":1},{"value":0},{"value":0},{"value":2240044497},{"value":0},{"value":0},{"value":0},{"value":2},{"value":1},{"value":33795},{"value":0},{"value":0},{"value":369},{"value":6215872512},{"value":0},{"value":5215692704},{"value":4948292464},{"value":0},{"value":6215871776},{"value":12297829382473034411},{"value":5215692872},{"value":1},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4496179332},"cpsr":{"value":2684358656},"fp":{"value":6215871728},"sp":{"value":6215871504},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944889180},"far":{"value":0}},"frames":[{"imageOffset":51548,"symbol":"kevent64","symbolLocation":8,"imageIndex":10},{"imageOffset":53805188,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19227412,"imageIndex":1},{"imageOffset":53803064,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19225288,"imageIndex":1},{"imageOffset":53488744,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18910968,"imageIndex":1},{"imageOffset":53276536,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18698760,"imageIndex":1},{"imageOffset":53613896,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036120,"imageIndex":1},{"imageOffset":38491696,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":3913920,"imageIndex":1},{"imageOffset":53614304,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036528,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506102,"name":"MemoryInfra","threadState":{"x":[{"value":268451845},{"value":17179869186},{"value":0},{"value":148446954651648},{"value":0},{"value":148446954651648},{"value":32},{"value":0},{"value":0},{"value":17179869184},{"value":32},{"value":0},{"value":0},{"value":0},{"value":34563},{"value":0},{"value":18446744073709551569},{"value":6224293888},{"value":0},{"value":0},{"value":32},{"value":148446954651648},{"value":0},{"value":148446954651648},{"value":6224292896},{"value":0},{"value":17179869186},{"value":18446744073709550527},{"value":2}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6944916384},"cpsr":{"value":4096},"fp":{"value":6224292240},"sp":{"value":6224292160},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840756},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":78752,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":10},{"imageOffset":38756,"symbol":"mach_msg_overwrite","symbolLocation":484,"imageIndex":10},{"imageOffset":4008,"symbol":"mach_msg","symbolLocation":24,"imageIndex":10},{"imageOffset":53778648,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19200872,"imageIndex":1},{"imageOffset":53377792,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18800016,"imageIndex":1},{"imageOffset":53123188,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18545412,"imageIndex":1},{"imageOffset":53488744,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18910968,"imageIndex":1},{"imageOffset":53276536,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18698760,"imageIndex":1},{"imageOffset":53613896,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036120,"imageIndex":1},{"imageOffset":53614304,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036528,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107506104,"frames":[{"imageOffset":27908,"symbol":"kevent","symbolLocation":8,"imageIndex":10},{"imageOffset":2440724,"symbol":"uv_free_interface_addresses","symbolLocation":2204,"imageIndex":1},{"imageOffset":2371532,"symbol":"uv_run","symbolLocation":272,"imageIndex":1},{"imageOffset":112207020,"symbol":"node::OnFatalError(char const*, char const*)","symbolLocation":447996,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}],"threadState":{"x":[{"value":4},{"value":0},{"value":2},{"value":6232682096},{"value":1024},{"value":0},{"value":0},{"value":3552},{"value":6232682048},{"value":4294967295},{"value":2863311530},{"value":23},{"value":4588653960},{"value":16384},{"value":1073758208},{"value":1073758208},{"value":363},{"value":5216781648},{"value":0},{"value":73728},{"value":4588653800},{"value":0},{"value":0},{"value":2},{"value":2863311530},{"value":274877907},{"value":4294967295},{"value":1000},{"value":4588654336}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4444814868},"cpsr":{"value":1610616832},"fp":{"value":6232714960},"sp":{"value":6232681968},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944865540},"far":{"value":0}}},{"id":107506105,"frames":[{"imageOffset":17356,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":10},{"imageOffset":28828,"symbol":"_pthread_cond_wait","symbolLocation":984,"imageIndex":11},{"imageOffset":2419312,"symbol":"uv_cond_wait","symbolLocation":12,"imageIndex":1},{"imageOffset":112198492,"symbol":"node::OnFatalError(char const*, char const*)","symbolLocation":439468,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}],"threadState":{"x":[{"value":4},{"value":0},{"value":17664},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6241136296},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8807044352},{"value":0},{"value":5236636088},{"value":5236636152},{"value":6241136864},{"value":0},{"value":0},{"value":17664},{"value":17664},{"value":18432},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6945112220},"cpsr":{"value":1610616832},"fp":{"value":6241136416},"sp":{"value":6241136272},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944854988},"far":{"value":0}}},{"id":107506106,"frames":[{"imageOffset":17356,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":10},{"imageOffset":28828,"symbol":"_pthread_cond_wait","symbolLocation":984,"imageIndex":11},{"imageOffset":2419312,"symbol":"uv_cond_wait","symbolLocation":12,"imageIndex":1},{"imageOffset":112198492,"symbol":"node::OnFatalError(char const*, char const*)","symbolLocation":439468,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}],"threadState":{"x":[{"value":4},{"value":0},{"value":18176},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6249557672},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8807044352},{"value":0},{"value":5236636088},{"value":5236636152},{"value":6249558240},{"value":0},{"value":0},{"value":18176},{"value":18176},{"value":18944},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6945112220},"cpsr":{"value":1610616832},"fp":{"value":6249557792},"sp":{"value":6249557648},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944854988},"far":{"value":0}}},{"id":107506107,"frames":[{"imageOffset":17356,"symbol":"__psynch_cvwait","symbolLocation":8,"imageIndex":10},{"imageOffset":28828,"symbol":"_pthread_cond_wait","symbolLocation":984,"imageIndex":11},{"imageOffset":2419312,"symbol":"uv_cond_wait","symbolLocation":12,"imageIndex":1},{"imageOffset":112198492,"symbol":"node::OnFatalError(char const*, char const*)","symbolLocation":439468,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}],"threadState":{"x":[{"value":260},{"value":0},{"value":17920},{"value":0},{"value":0},{"value":160},{"value":0},{"value":0},{"value":6257979048},{"value":0},{"value":0},{"value":2},{"value":2},{"value":0},{"value":0},{"value":0},{"value":305},{"value":8807044352},{"value":0},{"value":5236636088},{"value":5236636152},{"value":6257979616},{"value":0},{"value":0},{"value":17920},{"value":17920},{"value":18688},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6945112220},"cpsr":{"value":1610616832},"fp":{"value":6257979168},"sp":{"value":6257979024},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944854988},"far":{"value":0}}},{"id":107506108,"frames":[{"imageOffset":2992,"symbol":"semaphore_wait_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":2420872,"symbol":"uv_sem_wait","symbolLocation":24,"imageIndex":1},{"imageOffset":112788940,"symbol":"node::SetTracingController(v8::TracingController*)","symbolLocation":71952,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}],"threadState":{"x":[{"value":14},{"value":0},{"value":4555163016,"symbolLocation":71884,"symbol":"node::SetTracingController(v8::TracingController*)"},{"value":0},{"value":6173274112},{"value":419432703},{"value":0},{"value":0},{"value":4555163016,"symbolLocation":71884,"symbol":"node::SetTracingController(v8::TracingController*)"},{"value":35844},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":18446744073709551580},{"value":8807044568},{"value":0},{"value":4584194820},{"value":4584194624},{"value":4584194048},{"value":4584194816},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4444795016},"cpsr":{"value":536875008},"fp":{"value":6173274000},"sp":{"value":6173273984},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840624},"far":{"value":0}}},{"id":107555444,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6258552832},{"value":4203},{"value":6258016256},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6258552832},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561104,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6172045312},{"value":18995},{"value":6171508736},{"value":0},{"value":409602},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6172045312},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561117,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6172618752},{"value":82987},{"value":6172082176},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6172618752},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561118,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6173192192},{"value":52003},{"value":6172655616},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6173192192},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561119,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6259126272},{"value":70959},{"value":6258589696},{"value":0},{"value":409602},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6259126272},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561120,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6259699712},{"value":71211},{"value":6259163136},{"value":0},{"value":409604},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6259699712},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561121,"frames":[{"imageOffset":7020,"symbol":"start_wqthread","symbolLocation":0,"imageIndex":11}],"threadState":{"x":[{"value":6260273152},{"value":0},{"value":6259736576},{"value":0},{"value":278532},{"value":18446744073709551615},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":0},"cpsr":{"value":4096},"fp":{"value":0},"sp":{"value":6260273152},"esr":{"value":0,"description":" Address size fault"},"pc":{"value":6945090412},"far":{"value":0}}},{"id":107561176,"name":"NetworkConfigWatcher","threadState":{"x":[{"value":268451845},{"value":21592279046},{"value":8589934592},{"value":297087182831616},{"value":0},{"value":297087182831616},{"value":2},{"value":4294967295},{"value":0},{"value":17179869184},{"value":0},{"value":2},{"value":0},{"value":0},{"value":69171},{"value":0},{"value":18446744073709551569},{"value":8807046232},{"value":0},{"value":4294967295},{"value":2},{"value":297087182831616},{"value":0},{"value":297087182831616},{"value":6268689832},{"value":8589934592},{"value":21592279046},{"value":18446744073709550527},{"value":4412409862}],"flavor":"ARM_THREAD_STATE64","lr":{"value":6944916384},"cpsr":{"value":4096},"fp":{"value":6268689680},"sp":{"value":6268689600},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944840756},"far":{"value":0}},"frames":[{"imageOffset":3124,"symbol":"mach_msg2_trap","symbolLocation":8,"imageIndex":10},{"imageOffset":78752,"symbol":"mach_msg2_internal","symbolLocation":76,"imageIndex":10},{"imageOffset":38756,"symbol":"mach_msg_overwrite","symbolLocation":484,"imageIndex":10},{"imageOffset":4008,"symbol":"mach_msg","symbolLocation":24,"imageIndex":10},{"imageOffset":511164,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":160,"imageIndex":12},{"imageOffset":505304,"symbol":"__CFRunLoopRun","symbolLocation":1208,"imageIndex":12},{"imageOffset":502424,"symbol":"CFRunLoopRunSpecific","symbolLocation":572,"imageIndex":12},{"imageOffset":367736,"symbol":"-[NSRunLoop(NSRunLoop) runMode:beforeDate:]","symbolLocation":212,"imageIndex":13},{"imageOffset":53766836,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19189060,"imageIndex":1},{"imageOffset":53759288,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19181512,"imageIndex":1},{"imageOffset":53488744,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18910968,"imageIndex":1},{"imageOffset":53276536,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":18698760,"imageIndex":1},{"imageOffset":53613896,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036120,"imageIndex":1},{"imageOffset":53614304,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19036528,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]},{"id":107561179,"name":"CrShutdownDetector","threadState":{"x":[{"value":4},{"value":0},{"value":4},{"value":6173356131},{"value":6173355432},{"value":18},{"value":0},{"value":0},{"value":2863311530},{"value":8789952216,"symbolLocation":0,"symbol":"_current_pid"},{"value":8026668483491361347},{"value":2},{"value":5238693772},{"value":4195588},{"value":671745024},{"value":671745024},{"value":3},{"value":8807052952},{"value":0},{"value":5216732768},{"value":6173355844},{"value":4},{"value":0},{"value":6173355844},{"value":4},{"value":0},{"value":0},{"value":0},{"value":0}],"flavor":"ARM_THREAD_STATE64","lr":{"value":4446679448},"cpsr":{"value":1610616832},"fp":{"value":6173355920},"sp":{"value":6173355504},"esr":{"value":1442840704,"description":" Address size fault"},"pc":{"value":6944843740},"far":{"value":0}},"frames":[{"imageOffset":6108,"symbol":"read","symbolLocation":8,"imageIndex":10},{"imageOffset":4305304,"symbol":"node::FreeArrayBufferAllocator(node::ArrayBufferAllocator*)","symbolLocation":268444,"imageIndex":1},{"imageOffset":53691540,"symbol":"v8::internal::SetupIsolateDelegate::SetupBuiltins(v8::internal::Isolate*, bool)","symbolLocation":19113764,"imageIndex":1},{"imageOffset":27592,"symbol":"_pthread_start","symbolLocation":136,"imageIndex":11},{"imageOffset":7040,"symbol":"thread_start","symbolLocation":8,"imageIndex":11}]}],
+  "usedImages" : [
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4295393280,
+    "size" : 16384,
+    "uuid" : "4c4c4432-5555-3144-a145-3eba182755c0",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/MacOS\/Redshift",
+    "name" : "Redshift"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4442374144,
+    "size" : 134496256,
+    "uuid" : "4c4c44fc-5555-3144-a1ce-173e9c31a954",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/Frameworks\/Electron Framework.framework\/Versions\/A\/Electron Framework",
+    "name" : "Electron Framework"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4295655424,
+    "size" : 81920,
+    "uuid" : "4c4c44e1-5555-3144-a1eb-22f5d4af44d8",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/Frameworks\/Squirrel.framework\/Versions\/A\/Squirrel",
+    "name" : "Squirrel"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4296212480,
+    "size" : 262144,
+    "uuid" : "4c4c44ea-5555-3144-a15c-efd8583abacd",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/Frameworks\/ReactiveObjC.framework\/Versions\/A\/ReactiveObjC",
+    "name" : "ReactiveObjC"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4295819264,
+    "size" : 49152,
+    "uuid" : "4c4c4423-5555-3144-a126-fe061167e081",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/Frameworks\/Mantle.framework\/Versions\/A\/Mantle",
+    "name" : "Mantle"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 4300079104,
+    "size" : 1982464,
+    "uuid" : "4c4c44d5-5555-3144-a145-1e9533a1150e",
+    "path" : "\/Users\/USER\/Desktop\/*\/Redshift.app\/Contents\/Frameworks\/Electron Framework.framework\/Versions\/A\/Libraries\/libffmpeg.dylib",
+    "name" : "libffmpeg.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4304175104,
+    "size" : 49152,
+    "uuid" : "9a87f143-aa9d-3c46-b2e8-b3fb9215e33e",
+    "path" : "\/usr\/lib\/libobjc-trampolines.dylib",
+    "name" : "libobjc-trampolines.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 4666441728,
+    "CFBundleShortVersionString" : "329.2",
+    "CFBundleIdentifier" : "com.apple.AGXMetalG13X",
+    "size" : 6914048,
+    "uuid" : "8c8ae16c-b243-3b2e-99f0-4574f8854540",
+    "path" : "\/System\/Library\/Extensions\/AGXMetalG13X.bundle\/Contents\/MacOS\/AGXMetalG13X",
+    "name" : "AGXMetalG13X",
+    "CFBundleVersion" : "329.2"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6941278208,
+    "size" : 636284,
+    "uuid" : "851b1f2e-d3b1-38f2-bcba-b3adc1efb084",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6944837632,
+    "size" : 243300,
+    "uuid" : "8d4aaa09-ba94-3024-bc0e-7a7a7acb2b08",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6945083392,
+    "size" : 51832,
+    "uuid" : "022dc315-cf35-38da-939e-03800b5beff2",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6945562624,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5500928,
+    "uuid" : "5f26d62a-28d7-31f0-995c-f33fa9b95aa2",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "3603"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64e",
+    "base" : 6968569856,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.Foundation",
+    "size" : 14587296,
+    "uuid" : "186c53da-a25e-3835-a8bb-409faf53e4e7",
+    "path" : "\/System\/Library\/Frameworks\/Foundation.framework\/Versions\/C\/Foundation",
+    "name" : "Foundation",
+    "CFBundleVersion" : "3603"
+  }
+],
+  "sharedCache" : {
+  "base" : 6940442624,
+  "size" : 5039325184,
+  "uuid" : "af655bcc-0a40-388a-8bb9-eb98e685d254"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.8G resident=0K(0%) swapped_out_or_unallocated=1.8G(100%)\nWritable regions: Total=1.8G written=1140K(0%) resident=948K(0%) swapped_out=192K(0%) unallocated=1.8G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               128K        1 \nActivity Tracing                   256K        1 \nCG image                           208K        5 \nColorSync                          624K       33 \nCoreAnimation                     21.9M       35 \nCoreGraphics                        64K        4 \nCoreUI image data                  960K        7 \nDispatch continuations            80.0M        1 \nFoundation                         144K        3 \nKernel Alloc Once                   64K        2 \nMALLOC                             1.4G       74 \nMALLOC guard page                  288K       18 \nMemory Tag 253                    32.0G        2 \nMemory Tag 255                     1.1T       91 \nMemory Tag 255 (reserved)          128K        2         reserved VM address space (unallocated)\nSTACK GUARD                       56.3M       21 \nStack                            100.0M       21 \nVM_ALLOCATE                        128K        5 \n__AUTH                            6046K      721 \n__AUTH_CONST                      80.0M      970 \n__CTF                               824        1 \n__DATA                            30.9M      954 \n__DATA_CONST                      33.2M      984 \n__DATA_DIRTY                      2782K      347 \n__FONT_DATA                        2352        1 \n__INFO_FILTER                         8        1 \n__LINKEDIT                       622.3M        9 \n__OBJC_RO                         61.4M        1 \n__OBJC_RW                         2396K        1 \n__TEXT                             1.2G     1005 \n__TPRO_CONST                       128K        2 \nmapped file                      268.6M       48 \npage table in kernel               948K        1 \nshared memory                      896K       15 \n===========                     =======  ======= \nTOTAL                              1.1T     5387 \nTOTAL, minus reserved VM space     1.1T     5387 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "name" : "CrBrowserMain",
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "logWritingSignature" : "3867e1f91ab336e18879eae6e5ca6ac0db61bebf",
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60186475825c62000ccf5450",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000083
+    },
+    {
+      "rolloutId" : "64628732bf2f5257dedc8988",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000001
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
+
+Model: MacBookPro18,2, BootROM 13822.1.2, proc 10:8:2 processors, 32 GB, SMC 
+Graphics: Apple M1 Max, Apple M1 Max, Built-In
+Display: Color LCD, 3456 x 2234 Retina, Main, MirrorOff, Online
+Display: DELL S2722DGM, 1440 x 2560, MirrorOff, Online
+Display: LC32G5xT, 2560 x 1440 (QHD/WQHD - Wide Quad High Definition), MirrorOff, Online
+Memory Module: LPDDR5, Samsung
+AirPort: spairport_wireless_card_type_wifi (0x14E4, 0x4387), wl0: Mar 23 2025 19:56:28 version 20.130.17.0.8.7.197 FWID 01-764e34b7
+IO80211_driverkit-1485.8 "IO80211_driverkit-1485.8" Jul 28 2025 20:41:09
+AirPort: 
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: Thunderbolt Bridge, Ethernet, bridge0
+Network Service: Wi-Fi, AirPort, en0
+USB Device: USB31Bus
+USB Device: USB31Bus
+USB Device: USB3.2 Hub
+USB Device: USB 10/100/1000 LAN
+USB Device: USB2.1 Hub
+USB Device: USB 2.0 Hub
+USB Device: BillBoard Device
+USB Device: USB Receiver
+USB Device: USB PnP Audio Device
+USB Device: HID Device
+USB Device: USB31Bus
+Thunderbolt Bus: MacBook Pro, Apple Inc.
+Thunderbolt Bus: MacBook Pro, Apple Inc.
+Thunderbolt Bus: MacBook Pro, Apple Inc.

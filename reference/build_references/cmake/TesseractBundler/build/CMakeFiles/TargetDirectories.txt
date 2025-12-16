@@ -1,0 +1,5 @@
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/TesseractBundler/build/CMakeFiles/edit_cache.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/TesseractBundler/build/CMakeFiles/rebuild_cache.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/TesseractBundler/build/CMakeFiles/list_install_components.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/TesseractBundler/build/CMakeFiles/install.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/TesseractBundler/build/CMakeFiles/install/local.dir

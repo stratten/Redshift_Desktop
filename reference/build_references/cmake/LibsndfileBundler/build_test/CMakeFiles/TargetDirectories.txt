@@ -1,0 +1,6 @@
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/edit_cache.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/rebuild_cache.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/list_install_components.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/install.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/install/local.dir
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/build_test/CMakeFiles/install/strip.dir

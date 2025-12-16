@@ -1,0 +1,411 @@
+10:00:30 AM [INFO] 🎵 Media key listeners initialized
+10:00:30 AM [INFO] 🎵 Setting up HTML5 Audio element for playback
+10:00:30 AM [INFO] 🎵 🎛️ Loaded equalizer settings
+10:00:30 AM [SUCCESS] 🎵 🎛️ Equalizer initialized with 10 bands
+10:00:30 AM [INFO] 🎵 Setting up music player event listeners
+10:00:30 AM [INFO] 🎵 Music player event listeners setup complete
+10:00:30 AM [INFO] 🎵 Setting up Refresh Library button listener
+10:00:30 AM [INFO] 🎵 🎵 Setting up music table filters
+10:00:30 AM [INFO] 🎵 🎵 Music table filters setup complete
+10:00:30 AM [SUCCESS] 🎵 ✅ Playback listeners initialized for auto-refresh
+10:00:30 AM [INFO] 🎵 📱 Loading Doppler sync status...
+📱 Analyzing Doppler sync status...
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📱 IPC handler: usb-sync-get-status called
+📱 Device status: {
+  isMonitoring: true,
+  connectedDeviceCount: 0,
+  hasIOSDevice: false,
+  connectedDevices: []
+}
+📱 Sync status: {
+  isSyncing: false,
+  isMounted: false,
+  mountPoint: '/tmp/redshift_iphone'
+}
+📱 Returning status: {
+  available: false,
+  connected: false,
+  connectedDevices: [],
+  isSyncing: false,
+  isMounted: false,
+  mountPoint: '/tmp/redshift_iphone'
+}
+10:00:30 AM [INFO] 🎵 Music Library: /Users/strattenwaldt/Music
+10:00:30 AM [INFO] 🎵 Auto-configuring music library path...
+10:00:30 AM [INFO] 🎵 Loaded 2 playlists
+[Settings] Saved: {"windowBounds":{"width":1200,"height":800},"isMaximized":false}
+📤 Sending to renderer: setting-updated { key: 'musicLibraryPath', value: '/Users/strattenwaldt/Music' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+🎨 Loaded 41 artist images from disk
+🔄 refreshDeviceStatus called
+⚠️  No device connected, skipping refresh
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 595ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 595ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+10:00:30 AM [INFO] 🎵 🚀 RedShift music player UI initialized
+10:00:30 AM [INFO] 🎵 🚀 Auto-scanning music library on startup...
+10:00:30 AM [INFO] 🎵 🔍 Starting music library scan...
+🎵 Starting smart music library scan...
+🎵 Music library path: /Users/strattenwaldt/Music
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 277ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 277ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+🎵 Smart scan complete: 441 total files
+10:00:31 AM [INFO] 🎵 📚 Initializing music library...
+10:00:31 AM [INFO] 🎵 🔍 Starting music library scan...
+🎵 Starting smart music library scan...
+🎵 Music library path: /Users/strattenwaldt/Music
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Starting smart music library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 audio files in filesystem' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log { type: 'info', message: '🎵 Found 441 files in cache' }
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+📤 Sending to renderer: log {
+  type: 'info',
+  message: '🎵 File analysis:\n' +
+    '      - New files: 0\n' +
+    '      - Modified files: 0\n' +
+    '      - Deleted files: 0\n' +
+    '      - Unchanged files: 441'
+}
+10:00:31 AM [INFO] 441 items 🔍 Raw scan result:
+10:00:31 AM [SUCCESS] 🎵 🔍 Stored 441 tracks in musicLibrary array
+10:00:31 AM [INFO] Disjoint Square - Luminance - 01 Emergent.mp3,Disjoint Square - Luminance - 02 Skylight.mp3,Disjoint Square - Luminance - 03 Irradiant.mp3 🔍 Sample tracks:
+10:00:31 AM [INFO] 🎵 Loaded song metadata for 443 songs
+10:00:31 AM [INFO] 🎵 🎵 Loaded metadata: 2 favorites, 2 ratings, 443 play counts
+10:00:31 AM [INFO] 🎵 🎵 Updating music library table with 441 tracks
+10:00:31 AM [INFO] 🎵 🎵 Updated track count display: 441 tracks
+10:00:31 AM [INFO] 🎵 🎵 Proceeding with table rendering for 441 tracks
+10:00:31 AM [INFO] 🎵 🎵 Populated browser: 22 genres, 42 artists, 35 albums
+10:00:31 AM [INFO] 🎵 🎵 Set filteredTracks array: 441 tracks
+10:00:31 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:31 AM [INFO] 🎵 🎵 Current track path: NONE
+10:00:31 AM [INFO] 🎵 🎵 Is playing: false
+10:00:31 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:31 AM [INFO] 🎵 🎵 Generated 1101754 characters of HTML
+10:00:31 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:31 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:31 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:31 AM [INFO] 🎵 🎯 Adding click event listeners to table
+2025-11-17 10:00:31.832 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2025-11-17 10:00:31.832 Electron Helper (Renderer)[37943:21115871] CoreText note: Set a breakpoint on CTFontLogSystemFontNameRequest to debug.
+2025-11-17 10:00:31.872 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 400ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+📤 Sending to renderer: log {
+  type: 'success',
+  message: '🎵 Smart scan complete in 400ms:\n' +
+    '      - Total files: 441\n' +
+    '      - Processed: 0\n' +
+    '      - From cache: 441'
+}
+10:00:32 AM [INFO] 🎵 🔊 Found 10 audio output devices
+10:00:32 AM [SUCCESS] 🎵 🔊 Audio output device management initialized
+🎵 Smart scan complete: 441 total files
+10:00:32 AM [INFO] 441 items 🔍 Raw scan result:
+10:00:32 AM [SUCCESS] 🎵 🔍 Stored 441 tracks in musicLibrary array
+10:00:32 AM [INFO] Disjoint Square - Luminance - 01 Emergent.mp3,Disjoint Square - Luminance - 02 Skylight.mp3,Disjoint Square - Luminance - 03 Irradiant.mp3 🔍 Sample tracks:
+10:00:32 AM [INFO] 🎵 Loaded song metadata for 443 songs
+10:00:32 AM [INFO] 🎵 🎵 Loaded metadata: 2 favorites, 2 ratings, 443 play counts
+10:00:32 AM [INFO] 🎵 🎵 Updating music library table with 441 tracks
+10:00:32 AM [INFO] 🎵 🎵 Updated track count display: 441 tracks
+10:00:32 AM [INFO] 🎵 🎵 Proceeding with table rendering for 441 tracks
+10:00:32 AM [INFO] 🎵 🎵 Populated browser: 22 genres, 42 artists, 35 albums
+10:00:32 AM [INFO] 🎵 🎵 Set filteredTracks array: 441 tracks
+10:00:32 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:32 AM [INFO] 🎵 🎵 Current track path: NONE
+10:00:32 AM [INFO] 🎵 🎵 Is playing: false
+10:00:32 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:32 AM [INFO] 🎵 🎵 Generated 1101754 characters of HTML
+10:00:32 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:32 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:32 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:32 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2025-11-17 10:00:32.672 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2025-11-17 10:00:32.707 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:35 AM [INFO] DIV 🎯 Table double-click detected on:
+10:00:35 AM [INFO] 🎵 🎯 Double-click playing track: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:35 AM [INFO] 🎵 🎯 Found track at filtered index: 22
+10:00:35 AM [INFO] 🎵 🎯 Got playback context: library: all tracks
+10:00:35 AM [INFO] 🎵 🎯 Setting playback context: library: all tracks with 441 tracks
+10:00:35 AM [INFO] 🎵 Set playback context: library: all tracks with 441 tracks, starting at index 22
+10:00:35 AM [INFO] 🎵 Playing track: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+📤 Sending to renderer: audio-stop { track: null }
+📤 Sending to renderer: audio-state-changed {
+  currentTrack: null,
+  isPlaying: false,
+  isPaused: false,
+  isLoading: true,
+  position: 0,
+  duration: 0,
+  volume: 1,
+  isMuted: false,
+  shuffleMode: false,
+  repeatMode: 'none',
+  queue: [],
+  queueIndex: 0,
+  queueLength: 0
+}
+📤 Sending to renderer: audio-track-loaded {
+  track: {
+    filePath: '/Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3',
+    filename: 'Disjoint Square - Luminance - 02 Skylight.mp3',
+    metadata: { format: [Object], common: [Object], albumArt: [Object] },
+    loadedAt: 1763391635578
+  },
+  duration: 291.08244897959185
+}
+📤 Sending to renderer: audio-state-changed {
+  currentTrack: {
+    filePath: '/Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3',
+    filename: 'Disjoint Square - Luminance - 02 Skylight.mp3',
+    metadata: { format: [Object], common: [Object], albumArt: [Object] },
+    loadedAt: 1763391635578
+  },
+  isPlaying: false,
+  isPaused: false,
+  isLoading: false,
+  position: 0,
+  duration: 291.08244897959185,
+  volume: 1,
+  isMuted: false,
+  shuffleMode: false,
+  repeatMode: 'none',
+  queue: [],
+  queueIndex: 0,
+  queueLength: 0
+}
+10:00:35 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:35 AM [INFO] 🎵 🎵 Current track path: NONE
+10:00:35 AM [INFO] 🎵 🎵 Is playing: false
+10:00:35 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:35 AM [INFO] 🎵 🎵 Generated 1101754 characters of HTML
+10:00:35 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:35 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:35 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:35 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2025-11-17 10:00:35.683 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:35 AM [INFO] 🎵    Set currentTrack - path: SET, name: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:35 AM [INFO] 🎵 Updating track info UI: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:35 AM [INFO] 🎵 Updated track info: "Skylight" by "Disjoint Square"
+10:00:35 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:35 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:35 AM [INFO] 🎵 🎵 Is playing: false
+10:00:35 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:35 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:35 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:35 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:35 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:35 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+📤 Sending to renderer: audio-play {
+  track: {
+    filePath: '/Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3',
+    filename: 'Disjoint Square - Luminance - 02 Skylight.mp3',
+    metadata: { format: [Object], common: [Object], albumArt: [Object] },
+    loadedAt: 1763391635578
+  },
+  position: 0
+}
+📤 Sending to renderer: audio-state-changed {
+  currentTrack: {
+    filePath: '/Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3',
+    filename: 'Disjoint Square - Luminance - 02 Skylight.mp3',
+    metadata: { format: [Object], common: [Object], albumArt: [Object] },
+    loadedAt: 1763391635578
+  },
+  isPlaying: true,
+  isPaused: false,
+  isLoading: false,
+  position: 0,
+  duration: 291.08244897959185,
+  volume: 1,
+  isMuted: false,
+  shuffleMode: false,
+  repeatMode: 'none',
+  queue: [],
+  queueIndex: 0,
+  queueLength: 0
+}
+10:00:35 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:35 AM [INFO] 🎵 🎵 Current track path: NONE
+10:00:35 AM [INFO] 🎵 🎵 Is playing: false
+10:00:35 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:35 AM [INFO] 🎵 🎵 Generated 1101754 characters of HTML
+10:00:35 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:35 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:35 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:35 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:35 AM [INFO] 🎵 Updating track info UI: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:35 AM [INFO] 🎵 Updated track info: "Skylight" by "Disjoint Square"
+10:00:35 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:35 AM [INFO] 🎵 🎵 Current track path: NONE
+10:00:35 AM [INFO] 🎵 🎵 Is playing: false
+10:00:35 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:35 AM [INFO] 🎵 🎵 Generated 1101754 characters of HTML
+10:00:35 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:35 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:35 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:35 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2025-11-17 10:00:36.045 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: false
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:36 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:36 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:36 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:36 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:36 AM [INFO] 🎵 Updating track info UI: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 Updated track info: "Skylight" by "Disjoint Square"
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: false
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:36 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:36 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:36 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:36 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2025-11-17 10:00:36.359 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: true
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:36 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:36 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:36 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:36 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: true
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:36 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:36 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:36 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:36 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:36 AM [INFO] 🎵 Updating track info UI: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 Updated track info: "Skylight" by "Disjoint Square"
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: true
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:36 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:36 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:36 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:36 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2025-11-17 10:00:36.670 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".HiraKakuInterface-W7", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2025-11-17 10:00:36.671 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:36 AM [INFO] 🎵 Audio loading started
+10:00:36 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:36 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:36 AM [INFO] 🎵 🎵 Is playing: true
+10:00:36 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:36 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+2025-11-17 10:00:37.009 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".HiraKakuInterface-W7", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2025-11-17 10:00:37.010 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:37 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:37 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:37 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:37 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:37 AM [INFO] 🎵 Audio playback started
+📱 Sync Status: 441 local, 228 synced, 212 new, 100 orphaned
+2025-11-17 10:00:37.382 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".HiraKakuInterface-W7", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2025-11-17 10:00:37.383 Electron Helper (Renderer)[37943:21115871] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+10:00:37 AM [INFO] 🎵 Audio metadata loaded, duration: 4:51
+10:00:37 AM [INFO] 🎵 Audio ready to play
+10:00:37 AM [INFO] 🎵 🎵 renderMusicTable called with 441 filtered tracks
+10:00:37 AM [INFO] 🎵 🎵 Current track path: /Users/strattenwaldt/Music/Disjoint Square - Luminance/Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:37 AM [INFO] 🎵 🎵 Is playing: true
+10:00:37 AM [INFO] 🎵 🎵 Building HTML for 441 tracks...
+10:00:37 AM [INFO] 🎵 🎵 Generated 1101812 characters of HTML
+10:00:37 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 441
+10:00:37 AM [INFO] 🎵 🎵 Found 1764 action buttons in DOM
+10:00:37 AM [INFO] 🎵 🎵 Found 441 play buttons in DOM
+10:00:37 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+10:00:37 AM [SUCCESS] 🎵 Track loaded and playing: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:37 AM [SUCCESS] 🎵 🎯 Double-click track loaded and playing: Disjoint Square - Luminance - 02 Skylight.mp3
+10:00:37 AM [SUCCESS] 🎵 📱 Sync status loaded: 441 local, 228 synced, 212 new
+

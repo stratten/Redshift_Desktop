@@ -1,0 +1,8 @@
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libsndfile.1.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libogg.0.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libvorbis.0.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libvorbisenc.2.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libFLAC.14.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libopus.0.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libmpg123.0.dylib
+/Users/strattenwaldt/Desktop/Basil/builds/common/cmake/LibsndfileBundler/test_install_dir/dependencies/libs_sndfile_bundle/libmp3lame.0.dylib
