@@ -12,7 +12,8 @@ Plays music. Manages your library. Syncs to iPhone. Pulls music from iPhone to d
 
 - Full music player (MP3, WAV, FLAC support)
 - Library management with metadata editing
-- Album art and playlist management
+- Automatic album art and artist image retrieval from MusicBrainz/Cover Art Archive
+- Playlist management with queue control
 - Bi-directional sync to iPhone via USB or Wi-Fi
 - Scans and imports music FROM your iPhone's library TO desktop
 - Bi-directional playlist sync
@@ -105,6 +106,7 @@ Built with Electron. Cross-platform without maintaining three native codebases.
 - Audio playback service
 - USB device monitoring
 - iPhone sync services (libimobiledevice, pymobiledevice3, WebSocket)
+- MusicBrainz integration for automatic artist images and album artwork
 
 **Renderer:**
 - Vanilla JavaScript with custom component system
@@ -172,6 +174,8 @@ Fork it, fix it, send a PR. Code is MIT licensed.
 
 - [libimobiledevice](https://libimobiledevice.org/) - iOS communication
 - [pymobiledevice3](https://github.com/doronz88/pymobiledevice3) - Modern iOS tools
+- [MusicBrainz](https://musicbrainz.org/) - Free metadata and artist image API
+- [Cover Art Archive](https://coverartarchive.org/) - Free album artwork API
 - [Doppler](https://brushedtype.co/doppler/) - The mobile app that doesn't sync properly, which is why this exists
 
 ---
