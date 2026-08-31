@@ -5,18 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redshift</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script>
+        (function () {
+            try {
+                var savedTheme = localStorage.getItem('rs-theme');
+                if (savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch (e) { /* localStorage unavailable, default to light */ }
+        })();
+    </script>
 </head>
 <body>
     <div class="app-container">
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="logo">
-                <img src="assets/logo.png" alt="Redshift Logo" style="width: 32px; height: 32px; border-radius: 6px;">
-                <h1>Redshift</h1>
+                <div class="logo-brand">
+                    <img src="assets/logo.png" alt="Redshift Logo" style="width: 32px; height: 32px; border-radius: 6px;">
+                    <h1>Redshift</h1>
+                </div>
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle dark mode" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
             </div>
             
-            <div style="padding: 15px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-                <div style="font-size: 12px; color: #718096;">
+            <div style="padding: 15px; border-bottom: 1px solid var(--rs-border-color);">
+                <div style="font-size: 12px; color: var(--rs-text-secondary);">
                     <span id="libraryPath">~/Music/RedshiftMaster</span>
                 </div>
             </div>
@@ -660,15 +688,15 @@
 <div id="doppler-syncTab" class="tab-content" style="display: none;">
     <div style="max-width: 1200px; margin: 0 auto;">
         <!-- Info Banner -->
-        <div style="background: #e3f2fd; border-left: 4px solid #2196F3; padding: 15px; margin-bottom: 20px; border-radius: 4px; display: flex; gap: 12px; align-items: flex-start;">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2196F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+        <div style="background: var(--rs-info-bg); border-left: 4px solid var(--rs-info-border); padding: 15px; margin-bottom: 20px; border-radius: 4px; display: flex; gap: 12px; align-items: flex-start;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--rs-info-border)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="12" y1="16" x2="12" y2="12"></line>
                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
             </svg>
             <div>
-                <strong>Doppler Mobile App Sync</strong>
-                <p style="margin: 5px 0 0 0; color: #666;">
+                <strong style="color: var(--rs-text-primary);">Doppler Mobile App Sync</strong>
+                <p style="margin: 5px 0 0 0; color: var(--rs-text-secondary);">
                     This page syncs your music library to the <strong>Doppler mobile app</strong> via Wi-Fi. 
                     If you're using <strong>RedShift Mobile</strong>, use the Dashboard tab instead.
                 </p>
@@ -680,20 +708,20 @@
             <div class="stat-card">
                 <h3 style="margin-bottom: 15px;">Library Overview</h3>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">Local Files:</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">Local Files:</span>
                         <span id="localFilesCount" style="font-weight: 600;">-</span>
                     </div>
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">Synced to Doppler:</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">Synced to Doppler:</span>
                         <span id="transferredFilesCount" style="font-weight: 600;">-</span>
                     </div>
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">New Files:</span>
-                        <span id="newFilesCount" style="font-weight: 600; color: #2196F3;">-</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">New Files:</span>
+                        <span id="newFilesCount" style="font-weight: 600; color: var(--rs-info-border);">-</span>
                     </div>
                     <div style="display: flex; justify-content: space-between; padding: 8px 0;">
-                        <span style="color: #666;">Orphaned:</span>
+                        <span style="color: var(--rs-text-secondary);">Orphaned:</span>
                         <span id="orphanedFilesCount" style="font-weight: 600; color: #ff9800;">-</span>
                     </div>
                 </div>
@@ -702,20 +730,20 @@
             <div class="stat-card">
                 <h3 style="margin-bottom: 15px;">Sync Status</h3>
                 <div style="display: flex; flex-direction: column; gap: 10px;">
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">Sync Health:</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">Sync Health:</span>
                         <span id="syncHealthIndicator" style="font-weight: 600; color: #4caf50;">--%</span>
                     </div>
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">Last Sync:</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">Last Sync:</span>
                         <span id="lastSyncDate" style="font-weight: 600;">Never</span>
                     </div>
-                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #e2e8f0;">
-                        <span style="color: #666;">New Size:</span>
+                    <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid var(--rs-border-color);">
+                        <span style="color: var(--rs-text-secondary);">New Size:</span>
                         <span id="newFilesSize" style="font-weight: 600;">0 MB</span>
                     </div>
                     <div style="display: flex; justify-content: space-between; padding: 8px 0;">
-                        <span style="color: #666;">Total Synced:</span>
+                        <span style="color: var(--rs-text-secondary);">Total Synced:</span>
                         <span id="totalTransferredCount" style="font-weight: 600;">-</span>
                     </div>
                 </div>
@@ -759,10 +787,10 @@
             <div id="syncProgressContainer" style="display: none;">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
                     <span style="font-weight: 500;">Sync Progress</span>
-                    <span id="syncProgressText" style="color: #666;">0/0</span>
+                    <span id="syncProgressText" style="color: var(--rs-text-secondary);">0/0</span>
                 </div>
-                <div style="height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden;">
-                    <div id="syncProgressBar" style="height: 100%; background: #5a67d8; width: 0%; transition: width 0.3s;"></div>
+                <div style="height: 8px; background: var(--rs-border-color); border-radius: 4px; overflow: hidden;">
+                    <div id="syncProgressBar" style="height: 100%; background: var(--rs-accent); width: 0%; transition: width 0.3s;"></div>
                 </div>
             </div>
         </div>
@@ -772,14 +800,14 @@
             <div class="stat-card">
                 <h3 style="margin-bottom: 15px;">New Files to Sync</h3>
                 <div id="newFilesList" style="max-height: 400px; overflow-y: auto;">
-                    <p style="color: #999; text-align: center; padding: 20px;">No new files</p>
+                    <p style="color: var(--rs-text-muted); text-align: center; padding: 20px;">No new files</p>
                 </div>
             </div>
             
             <div class="stat-card">
                 <h3 style="margin-bottom: 15px;">Orphaned Files</h3>
                 <div id="orphanedFilesList" style="max-height: 400px; overflow-y: auto;">
-                    <p style="color: #999; text-align: center; padding: 20px;">No orphaned files</p>
+                    <p style="color: var(--rs-text-muted); text-align: center; padding: 20px;">No orphaned files</p>
                 </div>
             </div>
         </div>
@@ -810,41 +838,41 @@
         <div style="margin-bottom: 15px;">
             <label style="display: block; margin-bottom: 5px; font-weight: 500;">Music Library Path:</label>
             <div style="display: flex; gap: 10px;">
-                <input type="text" id="musicLibraryPathInput" style="flex: 1; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 4px;" readonly>
+                <input type="text" id="musicLibraryPathInput" style="flex: 1; padding: 8px 12px; border: 1px solid var(--rs-border-color); border-radius: 4px; background: var(--rs-bg-surface); color: var(--rs-text-primary);" readonly>
                 <button class="btn btn-secondary" id="browseMusicBtn">Browse</button>
             </div>
-            <small style="color: #666; margin-top: 5px; display: block;">This folder will be used for both music playback and device syncing</small>
+            <small style="color: var(--rs-text-secondary); margin-top: 5px; display: block;">This folder will be used for both music playback and device syncing</small>
         </div>
         
         <!-- Advanced Settings (collapsed by default) -->
         <div style="margin-bottom: 15px;">
-            <button type="button" id="advancedToggle" style="background: none; border: none; color: #5a67d8; cursor: pointer; padding: 0; font-size: 14px;">
+            <button type="button" id="advancedToggle" style="background: none; border: none; color: var(--rs-accent); cursor: pointer; padding: 0; font-size: 14px;">
                 ▶ Advanced Settings
             </button>
-            <div id="advancedSettings" style="display: none; margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+            <div id="advancedSettings" style="display: none; margin-top: 15px; padding: 15px; background: var(--rs-bg-surface-sunken); border-radius: 8px;">
                 <div style="margin-bottom: 15px;">
                     <label style="display: block; margin-bottom: 5px; font-weight: 500;">Separate Sync Library Path (optional):</label>
                     <div style="display: flex; gap: 10px;">
-                        <input type="text" id="syncLibraryPathInput" style="flex: 1; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 4px;" readonly placeholder="Uses main library path if empty">
+                        <input type="text" id="syncLibraryPathInput" style="flex: 1; padding: 8px 12px; border: 1px solid var(--rs-border-color); border-radius: 4px; background: var(--rs-bg-surface); color: var(--rs-text-primary);" readonly placeholder="Uses main library path if empty">
                         <button class="btn btn-secondary" id="browseSyncBtn">Browse</button>
                     </div>
-                    <small style="color: #666; margin-top: 5px; display: block;">Leave empty to use the main music library for syncing</small>
+                    <small style="color: var(--rs-text-secondary); margin-top: 5px; display: block;">Leave empty to use the main music library for syncing</small>
                 </div>
                 
                 <div style="margin-bottom: 15px;">
                     <label style="display: block; margin-bottom: 8px; font-weight: 500;">Music Library Cache:</label>
-                    <div id="cacheStats" style="background: white; padding: 10px; border: 1px solid #e2e8f0; border-radius: 4px; font-size: 13px; margin-bottom: 8px;">
+                    <div id="cacheStats" style="background: var(--rs-bg-surface); padding: 10px; border: 1px solid var(--rs-border-color); border-radius: 4px; font-size: 13px; margin-bottom: 8px;">
                         <p style="margin: 0;">Loading cache information...</p>
                     </div>
                     <button class="btn btn-secondary" id="clearCacheBtn">Clear Cache</button>
-                    <small style="color: #666; margin-top: 5px; display: block;">Cache stores metadata to speed up library loading. Clear if you notice issues.</small>
+                    <small style="color: var(--rs-text-secondary); margin-top: 5px; display: block;">Cache stores metadata to speed up library loading. Clear if you notice issues.</small>
                 </div>
             </div>
         </div>
         
         <div style="margin-bottom: 15px;">
             <label style="display: block; margin-bottom: 5px; font-weight: 500;">Default Transfer Method:</label>
-            <select id="transferMethodSelect" style="width: 100%; padding: 8px 12px; border: 1px solid #e2e8f0; border-radius: 4px;">
+            <select id="transferMethodSelect" style="width: 100%; padding: 8px 12px; border: 1px solid var(--rs-border-color); border-radius: 4px; background: var(--rs-bg-surface); color: var(--rs-text-primary);">
                 <option value="direct_libimobile">Direct Transfer (libimobiledevice)</option>
                 <option value="direct_pymobile">Direct Transfer (pymobiledevice3)</option>
                 <option value="itunes_protocol">iTunes File Sharing Protocol</option>
@@ -1110,6 +1138,11 @@
                     <div class="eq-frequency">16kHz</div>
                 </div>
             </div>
+            <div class="crossfade-control">
+                <label for="crossfadeSlider">Crossfade</label>
+                <input type="range" class="crossfade-slider" id="crossfadeSlider" min="0" max="10" step="1" value="0">
+                <span class="crossfade-value" id="crossfadeValue">Off</span>
+            </div>
         </div>
     </div>
 </div>
@@ -1138,6 +1171,7 @@
     <script src="components/audioplayer/AudioPlayerEqualizer.js"></script>
     <script src="components/audioplayer/AudioPlayerOutputDevice.js"></script>
     <script src="components/audioplayer/AudioPlayerPlayback.js"></script>
+    <script src="components/audioplayer/AudioPlayerCrossfade.js"></script>
     <script src="components/audioplayer/AudioPlayerControls.js"></script>
     <script src="components/audioplayer/AudioPlayerProgress.js"></script>
     <!-- Services -->
