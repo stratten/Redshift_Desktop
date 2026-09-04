@@ -137,28 +137,40 @@
     vertical-align: middle !important;
 }
 
-.now-playing-icon {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
+/* Tiny 3-bar "now playing" indicator, replacing the old pulsing ♫ glyph.
+   Bar heights are driven live by AudioPlayerVisualizer via inline styles
+   while playing (real per-frequency-band data, not a canned CSS loop) —
+   these rules only define resting/paused state and layout. */
+.now-playing-bars {
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2px;
+    height: 14px;
+    width: 16px;
 }
 
-.now-playing-icon.playing {
-    color: var(--rs-accent);
-    animation: pulse 1.5s ease-in-out infinite;
+.now-playing-bar {
+    display: block;
+    width: 3px;
+    border-radius: 1px;
+    /* Deliberately hot yellow-to-red rather than the app's muted accent
+       color — it needs to read as "something is actively happening here"
+       at a glance among rows of plain text, not blend in like the rest of
+       the UI. The gradient is relative to each bar's own box, so a taller
+       (louder) bar shows more of the red end, and a short one shows mostly
+       yellow — height and color reinforce the same signal together. */
+    background: linear-gradient(to top, #facc15, #ef4444);
+    box-shadow: 0 0 4px rgba(239, 68, 68, 0.35);
+    height: 4px; /* resting height before JS starts writing live heights */
+    transition: height 0.1s linear;
 }
 
-.now-playing-icon.paused {
-    color: var(--rs-text-muted);
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
+.now-playing-bars.paused .now-playing-bar {
+    background: var(--rs-text-muted);
+    box-shadow: none;
+    height: 4px !important;
+    transition: none;
 }
 
 .music-row.now-playing {
