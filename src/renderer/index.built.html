@@ -184,6 +184,23 @@
             </div>
             
             <div class="header-center-group">
+                <div class="header-audio-visualization">
+                    <div class="audio-visualization" id="audioVisualization" role="button" tabindex="0" title="Open expanded visualization" aria-label="Open expanded live audio visualization">
+                        <canvas id="audioVisualizationCanvas"></canvas>
+                    </div>
+                    <div class="visualization-mode-menu">
+                        <button class="visualization-mode-trigger" id="headerAudioVisualizationMode" type="button" title="Choose visualization style" aria-label="Choose visualization style" aria-expanded="false">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="visualization-mode-options" id="audioVisualizationModeMenu" role="menu" hidden>
+                            <button type="button" data-visualization-mode="spectrogram" role="menuitemradio">Spectrogram</button>
+                            <button type="button" data-visualization-mode="oscilloscope" role="menuitemradio">Oscilloscope</button>
+                            <button type="button" data-visualization-mode="vectorscope" role="menuitemradio">Vectorscope</button>
+                        </div>
+                    </div>
+                </div>
                 <!-- Center: Mini Player -->
                 <!-- Center: Music Player Controls (visible on all tabs) -->
 <div class="header-center music-player-header">
@@ -244,7 +261,7 @@
                     <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
                 </svg>
             </button>
-            <button class="control-btn speed-btn" id="speedBtn" title="Playback speed: 1x (click to cycle)">1x</button>
+            <button class="control-btn speed-btn" id="speedBtn" title="Playback speed: 1× (open speed control)">1×</button>
             <button class="control-btn" id="equalizerBtn" title="Open Equalizer">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="4" y1="21" x2="4" y2="14"></line>
@@ -879,6 +896,23 @@
                 <option value="files_app">iOS Files App (Manual)</option>
             </select>
         </div>
+
+        <div style="margin-bottom: 15px;">
+            <label style="display: flex; align-items: center; gap: 8px; font-weight: 500;">
+                <input type="checkbox" id="audioVisualizationEnabled">
+                Show desktop audio visualization
+            </label>
+            <small style="color: var(--rs-text-secondary); margin-top: 5px; display: block;">Uses the post-equalizer audio signal beside playback controls.</small>
+        </div>
+
+        <div style="margin-bottom: 15px;">
+            <label for="audioVisualizationMode" style="display: block; margin-bottom: 5px; font-weight: 500;">Visualization Style:</label>
+            <select id="audioVisualizationMode" style="width: 100%; padding: 8px 12px; border: 1px solid var(--rs-border-color); border-radius: 4px; background: var(--rs-bg-surface); color: var(--rs-text-primary);">
+                <option value="spectrogram">Spectrogram</option>
+                <option value="oscilloscope">Oscilloscope</option>
+                <option value="vectorscope">Stereo Vectorscope</option>
+            </select>
+        </div>
     </div>
 </div>
 
@@ -1148,6 +1182,44 @@
 </div>
 
 
+    <!-- Playback Speed Popover -->
+<div id="playbackSpeedModal" class="playback-speed-popover" role="dialog" aria-label="Playback Speed">
+    <div class="playback-speed-popover-heading">
+        <span>Playback Speed</span>
+        <output class="playback-speed-value" id="playbackSpeedValue" for="playbackSpeedSlider" aria-live="polite">1×</output>
+    </div>
+    <div class="playback-speed-slider-shell">
+        <input type="range" class="playback-speed-slider" id="playbackSpeedSlider" min="0.5" max="2" step="0.05" value="1" aria-label="Playback speed">
+        <div class="playback-speed-ticks" aria-hidden="true">
+            <span class="major" style="--position: 0%"></span><span style="--position: 6.667%"></span><span style="--position: 13.333%"></span><span class="major" style="--position: 16.667%"></span><span style="--position: 20%"></span><span style="--position: 26.667%"></span><span class="major" style="--position: 33.333%"></span><span style="--position: 40%"></span><span style="--position: 46.667%"></span><span class="major" style="--position: 50%"></span><span style="--position: 53.333%"></span><span style="--position: 60%"></span><span class="major" style="--position: 66.667%"></span><span style="--position: 73.333%"></span><span style="--position: 80%"></span><span class="major" style="--position: 83.333%"></span><span style="--position: 86.667%"></span><span style="--position: 93.333%"></span><span class="major" style="--position: 100%"></span>
+        </div>
+    </div>
+    <div class="playback-speed-range-labels" aria-hidden="true">
+        <span style="--position: 0%">0.5×</span><span style="--position: 33.333%">1×</span><span style="--position: 66.667%">1.5×</span><span style="--position: 100%">2×</span>
+    </div>
+    <button class="playback-speed-reset" id="resetPlaybackSpeed" type="button">Reset to 1×</button>
+</div>
+
+    <!-- Audio Visualization Modal -->
+<div id="audioVisualizationModal" class="modal" style="display: none;">
+    <div class="modal-content audio-visualization-modal-content" role="dialog" aria-modal="true" aria-labelledby="audioVisualizationModalTitle">
+        <div class="modal-header">
+            <h2 id="audioVisualizationModalTitle">Audio Visualization</h2>
+            <div class="audio-visualization-modal-actions">
+                <select id="modalAudioVisualizationMode" aria-label="Visualization style">
+                    <option value="spectrogram">Spectrogram</option>
+                    <option value="oscilloscope">Oscilloscope</option>
+                    <option value="vectorscope">Vectorscope</option>
+                </select>
+                <button class="close-button" id="closeAudioVisualization" type="button" aria-label="Close audio visualization">&times;</button>
+            </div>
+        </div>
+        <div class="modal-body audio-visualization-modal-body">
+            <canvas id="audioVisualizationModalCanvas" aria-label="Expanded live audio visualization"></canvas>
+        </div>
+    </div>
+</div>
+
 
     <!-- Portaled Dropdowns (position: fixed elements that need to be at body level to avoid stacking context issues) -->
     <div class="output-device-dropdown" id="outputDeviceDropdown">
@@ -1170,6 +1242,7 @@
     <script src="components/audioplayer/AudioPlayerQueue.js"></script>
     <script src="components/audioplayer/AudioPlayerEqualizer.js"></script>
     <script src="components/audioplayer/AudioPlayerVisualizer.js"></script>
+    <script src="components/audioplayer/AudioPlayerVisualization.js"></script>
     <script src="components/audioplayer/AudioPlayerOutputDevice.js"></script>
     <script src="components/audioplayer/AudioPlayerPlayback.js"></script>
     <script src="components/audioplayer/AudioPlayerCrossfade.js"></script>
