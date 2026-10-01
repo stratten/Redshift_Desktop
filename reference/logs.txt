@@ -1,249 +1,103 @@
-fleMode: false,
-  repeatMode: 'none',
-  queue: [],
-  queueIndex: 0,
-  queueLength: 0
+    '      - From cache: 519'
 }
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314367 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵    Set currentTrack - path: SET, name: Fever Ray - Shiver (Ivory IT Remix).mp3
-1:50:06 PM [INFO] 🎵 Updating track info UI: Fever Ray - Shiver (Ivory IT Remix).mp3
-1:50:06 PM [INFO] 🎵 Updated track info: "Fever Ray - Shiver (Ivory IT Remix)" by "Fever Ray"
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314565 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-📤 Sending to renderer: audio-play {
-  track: {
-    filePath: '/Users/strattenwaldt/Music/Music/Media.localized/Music/Fever Ray - Shiver (Ivory IT Remix).mp3',
-    filename: 'Fever Ray - Shiver (Ivory IT Remix).mp3',
-    metadata: { format: [Object], common: [Object], albumArt: null },
-    loadedAt: 1788717006526
-  },
-  position: 0
-}
-📤 Sending to renderer: audio-state-changed {
-  currentTrack: {
-    filePath: '/Users/strattenwaldt/Music/Music/Media.localized/Music/Fever Ray - Shiver (Ivory IT Remix).mp3',
-    filename: 'Fever Ray - Shiver (Ivory IT Remix).mp3',
-    metadata: { format: [Object], common: [Object], albumArt: null },
-    loadedAt: 1788717006526
-  },
-  isPlaying: true,
-  isPaused: false,
-  isLoading: false,
-  position: 0,
-  duration: 380.5518367346939,
-  volume: 1,
-  isMuted: false,
-  shuffleMode: false,
-  repeatMode: 'none',
-  queue: [],
-  queueIndex: 0,
-  queueLength: 0
-}
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314367 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 Updating track info UI: Fever Ray - Shiver (Ivory IT Remix).mp3
-1:50:06 PM [INFO] 🎵 Updated track info: "Fever Ray - Shiver (Ivory IT Remix)" by "Fever Ray"
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314367 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314565 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 Updating track info UI: Fever Ray - Shiver (Ivory IT Remix).mp3
-1:50:06 PM [INFO] 🎵 Updated track info: "Fever Ray - Shiver (Ivory IT Remix)" by "Fever Ray"
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314565 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314566 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314566 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 Updating track info UI: Fever Ray - Shiver (Ivory IT Remix).mp3
-1:50:06 PM [INFO] 🎵 Updated track info: "Fever Ray - Shiver (Ivory IT Remix)" by "Fever Ray"
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314566 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 Audio loading started
-1:50:06 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:06 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:06 PM [INFO] 🎵 🎵 Generated 1314566 characters of HTML
-1:50:06 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:06 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:06 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:06 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:06 PM [INFO] 🎵 Audio playback started
-1:50:07 PM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
-1:50:07 PM [INFO] 🎵 🎵 Building HTML for 519 tracks...
-1:50:07 PM [INFO] 🎵 🎵 Generated 1314566 characters of HTML
-1:50:07 PM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
-1:50:07 PM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
-1:50:07 PM [INFO] 🎵 🎵 Found 519 play buttons in DOM
-1:50:07 PM [INFO] 🎵 🎯 Click listeners already exist, skipping
-1:50:07 PM [SUCCESS] 🎵 Track loaded and playing: Fever Ray - Shiver (Ivory IT Remix).mp3
-2026-09-06 13:50:09.661 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-2026-09-06 13:50:09.688 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-1:50:10 PM [INFO] 🎵 🎨 Auto-fetching images for 26 new artist(s)...
-1:50:10 PM [INFO] 🎵 🎨 [1/26] Fetching image for: Omar Noir
-2026-09-06 13:50:13.807 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Bold", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-2026-09-06 13:50:13.809 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".PingFangUIDisplaySC-Bold", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-2026-09-06 13:50:13.809 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".PingFangUIDisplaySC-Bold", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-2026-09-06 13:50:13.809 Electron Helper (Renderer)[21379:8297778] CoreText note: Client requested name ".PingFangUIDisplaySC-Bold", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
-1:50:17 PM [WARNING] 🎵 ❌ No image found for: Omar Noir
-1:50:17 PM [INFO] 🎵 🎨 [2/26] Fetching image for: Au/Ra
-1:50:17 PM [WARNING] 🎵 ❌ Still no image for: Omar Noir
-💾 Saved failed marker for: Omar Noir
-1:50:17 PM [INFO] 🎵 🔄 [5/47] Retrying: Fever Ray
-1:50:17 PM [WARNING] 🎵 ❌ Still no image for: Omar Noir
-1:50:17 PM [INFO] 🎵 🔄 [4/46] Retrying: Fever Ray
-1:50:30 PM [SUCCESS] 🎵 ✅ Found image for: Au/Ra
-💾 Saved image for Au/Ra: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/au_ra_78a2189e.jpeg
-1:50:30 PM [INFO] 🎵 🎨 [3/26] Fetching image for: Tomine Harket
-1:50:30 PM [SUCCESS] 🎵 ✅ Found image for: Au/Ra
-1:50:30 PM [INFO] 🎵 🎨 [3/26] Fetching image for: Tomine Harket
-💾 Saved image for Fever Ray: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/fever_ray_26ec4990.jpeg
-1:50:42 PM [SUCCESS] 🎵 ✅ Found image on retry: Fever Ray
-1:50:42 PM [INFO] 🎵 🔄 [5/46] Retrying: Kari Sigurdsson
-1:50:42 PM [SUCCESS] 🎵 ✅ Found image on retry: Fever Ray
-1:50:42 PM [INFO] 🎵 🔄 [6/47] Retrying: Kari Sigurdsson
-1:51:18 PM [WARNING] 🎵 ❌ No image found for: Tomine Harket
-1:51:18 PM [INFO] 🎵 🎨 [4/26] Fetching image for: Sophia Somajo
-💾 Saved failed marker for: Tomine Harket
-1:51:18 PM [WARNING] 🎵 ❌ No image found for: Tomine Harket
-1:51:18 PM [INFO] 🎵 🎨 [4/26] Fetching image for: Sophia Somajo
-1:51:23 PM [WARNING] 🎵 ❌ Still no image for: Kari Sigurdsson
-1:51:23 PM [INFO] 🎵 🔄 [7/47] Retrying: Sauli Lehtinen
-💾 Saved failed marker for: Kari Sigurdsson
-1:51:23 PM [WARNING] 🎵 ❌ Still no image for: Kari Sigurdsson
-1:51:23 PM [INFO] 🎵 🔄 [6/46] Retrying: Sauli Lehtinen
-1:51:23 PM [WARNING] 🎵 ❌ No image found for: Sophia Somajo
-1:51:23 PM [INFO] 🎵 🎨 [5/26] Fetching image for: Gavin James
-💾 Saved failed marker for: Sophia Somajo
-1:51:23 PM [WARNING] 🎵 ❌ No image found for: Sophia Somajo
-1:51:23 PM [INFO] 🎵 🎨 [5/26] Fetching image for: Gavin James
-1:51:48 PM [SUCCESS] 🎵 ✅ Found image for: Gavin James
-💾 Saved image for Gavin James: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/gavin_james_07300333.jpeg
-1:51:48 PM [INFO] 🎵 🎨 [6/26] Fetching image for: David Whistle
-1:51:48 PM [SUCCESS] 🎵 ✅ Found image for: Gavin James
-1:51:48 PM [INFO] 🎵 🎨 [6/26] Fetching image for: David Whistle
-1:52:03 PM [SUCCESS] 🎵 ✅ Found image for: David Whistle
-💾 Saved image for David Whistle: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/david_whistle_9a461eeb.jpeg
-1:52:03 PM [INFO] 🎵 🎨 [7/26] Fetching image for: Ethan Hawke
-1:52:03 PM [SUCCESS] 🎵 ✅ Found image for: David Whistle
-1:52:03 PM [INFO] 🎵 🎨 [7/26] Fetching image for: Ethan Hawke
-1:52:43 PM [WARNING] 🎵 ❌ Still no image for: Sauli Lehtinen
-1:52:43 PM [INFO] 🎵 🔄 [7/46] Retrying: RAVENS ROCK
-💾 Saved failed marker for: Sauli Lehtinen
-1:52:43 PM [WARNING] 🎵 ❌ Still no image for: Sauli Lehtinen
-1:52:43 PM [INFO] 🎵 🔄 [8/47] Retrying: RAVENS ROCK
-1:52:48 PM [SUCCESS] 🎵 ✅ Found image for: Ethan Hawke
-💾 Saved image for Ethan Hawke: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/ethan_hawke_e0aeb6ed.jpeg
-1:52:48 PM [INFO] 🎵 🎨 [8/26] Fetching image for: Naomi Wild
-1:52:48 PM [SUCCESS] 🎵 ✅ Found image for: Ethan Hawke
-1:52:48 PM [INFO] 🎵 🎨 [8/26] Fetching image for: Naomi Wild
-1:53:11 PM [SUCCESS] 🎵 ✅ Found image for: Naomi Wild
-1:53:11 PM [INFO] 🎵 🎨 [9/26] Fetching image for: WYNNE
-💾 Saved image for Naomi Wild: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/naomi_wild_109e9695.jpeg
-1:53:11 PM [SUCCESS] 🎵 ✅ Found image for: Naomi Wild
-1:53:11 PM [INFO] 🎵 🎨 [9/26] Fetching image for: WYNNE
-1:53:32 PM [SUCCESS] 🎵 ✅ Found image on retry: RAVENS ROCK
-💾 Saved image for RAVENS ROCK: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/ravens_rock_31308427.jpeg
-1:53:32 PM [INFO] 🎵 🔄 [9/47] Retrying: Nightcity.
-1:53:32 PM [SUCCESS] 🎵 ✅ Found image on retry: RAVENS ROCK
-1:53:32 PM [INFO] 🎵 🔄 [8/46] Retrying: Nightcity.
-1:53:39 PM [WARNING] 🎵 ❌ Still no image for: Nightcity.
-1:53:39 PM [INFO] 🎵 🔄 [9/46] Retrying: 7vvch
-💾 Saved failed marker for: Nightcity.
-1:53:39 PM [WARNING] 🎵 ❌ Still no image for: Nightcity.
-1:53:39 PM [INFO] 🎵 🔄 [10/47] Retrying: 7vvch
-1:53:48 PM [SUCCESS] 🎵 ✅ Found image for: WYNNE
-💾 Saved image for WYNNE: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/wynne_c88509a9.jpeg
-1:53:48 PM [INFO] 🎵 🎨 [10/26] Fetching image for: Mansionair
-1:53:48 PM [SUCCESS] 🎵 ✅ Found image for: WYNNE
-1:53:48 PM [INFO] 🎵 🎨 [10/26] Fetching image for: Mansionair
-1:53:58 PM [SUCCESS] 🎵 ✅ Found image on retry: 7vvch
-1:53:58 PM [INFO] 🎵 🔄 [11/47] Retrying: Pianistec
-💾 Saved image for 7vvch: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/7vvch_6d7f49bd.jpeg
-1:53:58 PM [SUCCESS] 🎵 ✅ Found image on retry: 7vvch
-1:53:58 PM [INFO] 🎵 🔄 [10/46] Retrying: Pianistec
-1:53:58 PM [WARNING] 🎵 ❌ Still no image for: Pianistec
-1:53:58 PM [INFO] 🎵 🔄 [11/46] Retrying: Dr. Dre
-💾 Saved failed marker for: Pianistec
-1:53:58 PM [WARNING] 🎵 ❌ Still no image for: Pianistec
-1:53:58 PM [INFO] 🎵 🔄 [12/47] Retrying: Dr. Dre
-1:54:05 PM [SUCCESS] 🎵 ✅ Found image on retry: Dr. Dre
-1:54:05 PM [INFO] 🎵 🔄 [13/47] Retrying: Nate Dogg
-💾 Saved image for Dr. Dre: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/dr__dre_d5fd1f47.jpeg
-1:54:05 PM [SUCCESS] 🎵 ✅ Found image on retry: Dr. Dre
-1:54:05 PM [INFO] 🎵 🔄 [12/46] Retrying: Nate Dogg
-1:54:15 PM [SUCCESS] 🎵 ✅ Found image on retry: Nate Dogg
-1:54:15 PM [INFO] 🎵 🔄 [13/46] Retrying: Jeff Bass
-💾 Saved image for Nate Dogg: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/nate_dogg_cb068d92.jpeg
-1:54:15 PM [SUCCESS] 🎵 ✅ Found image on retry: Nate Dogg
-1:54:15 PM [INFO] 🎵 🔄 [14/47] Retrying: Jeff Bass
-1:54:29 PM [SUCCESS] 🎵 ✅ Found image for: Mansionair
-💾 Saved image for Mansionair: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/mansionair_c5aa4aea.jpeg
-1:54:29 PM [INFO] 🎵 🎨 [11/26] Fetching image for: Leon Bridges
-1:54:29 PM [SUCCESS] 🎵 ✅ Found image for: Mansionair
-1:54:29 PM [INFO] 🎵 🎨 [11/26] Fetching image for: Leon Bridges
-💾 Saved image for Leon Bridges: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/leon_bridges_5a54d5a6.png
-1:54:41 PM [SUCCESS] 🎵 ✅ Found image for: Leon Bridges
-1:54:41 PM [INFO] 🎵 🎨 [12/26] Fetching image for: The Chamanas
-1:54:41 PM [SUCCESS] 🎵 ✅ Found image for: Leon Bridges
-1:54:41 PM [INFO] 🎵 🎨 [12/26] Fetching image for: The Chamanas
-1:54:59 PM [WARNING] 🎵 ❌ Still no image for: Jeff Bass
-1:54:59 PM [INFO] 🎵 🔄 [15/47] Retrying: Paul “Bunyan” Rosenberg
-💾 Saved failed marker for: Jeff Bass
-1:54:59 PM [WARNING] 🎵 ❌ Still no image for: Jeff Bass
-1:54:59 PM [INFO] 🎵 🔄 [14/46] Retrying: Paul “Bunyan” Rosenberg
-1:55:09 PM [WARNING] 🎵 ❌ Still no image for: Paul “Bunyan” Rosenberg
-1:55:09 PM [INFO] 🎵 🔄 [15/46] Retrying: Zoe Winkler
-💾 Saved failed marker for: Paul “Bunyan” Rosenberg
-1:55:09 PM [WARNING] 🎵 ❌ Still no image for: Paul “Bunyan” Rosenberg
-1:55:09 PM [INFO] 🎵 🔄 [16/47] Retrying: Zoe Winkler
-1:55:22 PM [SUCCESS] 🎵 ✅ Found image for: The Chamanas
-💾 Saved image for The Chamanas: /Users/strattenwaldt/Library/Application Support/redshift/artist-images/the_chamanas_4347df13.jpeg
-1:55:22 PM [INFO] 🎵 🎨 [13/26] Fetching image for: Regina Spektor
-1:55:22 PM [SUCCESS] 🎵 ✅ Found image for: The Chamanas
-1:55:22 PM [INFO] 🎵 🎨 [13/26] Fetching image for: Regina Spektor
+🎵 Smart scan complete: 519 total files
+11:17:30 AM [INFO] 519 items 🔍 Raw scan result:
+11:17:30 AM [SUCCESS] 🎵 🔍 Stored 519 tracks in musicLibrary array
+11:17:30 AM [INFO] Disjoint Square - Luminance - 01 Emergent.mp3,Disjoint Square - Luminance - 02 Skylight.mp3,Disjoint Square - Luminance - 03 Irradiant.mp3 🔍 Sample tracks:
+11:17:30 AM [INFO] 🎵 Loaded song metadata for 521 songs
+11:17:30 AM [INFO] 🎵 🎵 Loaded metadata: 2 favorites, 2 ratings, 521 play counts
+11:17:30 AM [INFO] 🎵 🎵 Updating music library table with 519 tracks
+11:17:30 AM [INFO] 🎵 🎵 Updated track count display: 519 tracks
+11:17:30 AM [INFO] 🎵 🎵 Proceeding with table rendering for 519 tracks
+11:17:30 AM [INFO] 🎵 🎵 Populated browser: 24 genres, 117 artists, 42 albums
+11:17:30 AM [INFO] 🎵 🎵 Set filteredTracks array: 519 tracks
+11:17:30 AM [INFO] 🎵 🎵 renderMusicTable called with 519 filtered tracks
+11:17:30 AM [INFO] 🎵 🎵 Building HTML for 519 tracks...
+11:17:30 AM [INFO] 🎵 🎵 Generated 1314368 characters of HTML
+11:17:31 AM [INFO] 🎵 🎵 Table HTML set. Current tableBody.children.length: 519
+11:17:31 AM [INFO] 🎵 🎵 Found 2076 action buttons in DOM
+11:17:31 AM [INFO] 🎵 🎵 Found 519 play buttons in DOM
+11:17:31 AM [INFO] 🎵 🎯 Click listeners already exist, skipping
+2026-09-21 11:17:31.092 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.113 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.114 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.114 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.124 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".CJKSymbolsFallbackSC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.124 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.124 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+2026-09-21 11:17:31.124 Electron Helper (Renderer)[13912:109937444] CoreText note: Client requested name ".PingFangUIDisplaySC-Regular", it will get TimesNewRomanPSMT rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:].
+📱 Sync Status: 519 local, 228 synced, 291 new, 100 orphaned
+11:17:35 AM [SUCCESS] 🎵 📱 Sync status loaded: 519 local, 228 synced, 291 new
+[WindowManager] resize save → x=264 y=175 w=1296 h=942 maximized=false
+[WindowManager] move save → x=432 y=34 w=1296 h=942 maximized=false
+[WindowManager] resize save → x=432 y=34 w=1296 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":432,"y":34,"width":1296,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":432,"y":34,"width":1296,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":432,"y":34,"width":1296,"height":1083},"isMaximized":false}
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+[WindowManager] resize save → x=419 y=34 w=1309 h=1083 maximized=false
+[WindowManager] resize save → x=412 y=34 w=1316 h=1083 maximized=false
+[WindowManager] resize save → x=399 y=34 w=1329 h=1083 maximized=false
+[WindowManager] resize save → x=375 y=34 w=1353 h=1083 maximized=false
+[WindowManager] resize save → x=363 y=34 w=1365 h=1083 maximized=false
+[WindowManager] resize save → x=337 y=34 w=1391 h=1083 maximized=false
+[WindowManager] resize save → x=333 y=34 w=1395 h=1083 maximized=false
+[WindowManager] resize save → x=317 y=34 w=1411 h=1083 maximized=false
+[WindowManager] resize save → x=313 y=34 w=1415 h=1083 maximized=false
+[WindowManager] resize save → x=305 y=34 w=1423 h=1083 maximized=false
+[WindowManager] resize save → x=298 y=34 w=1430 h=1083 maximized=false
+[WindowManager] resize save → x=296 y=34 w=1432 h=1083 maximized=false
+[WindowManager] resize save → x=293 y=34 w=1435 h=1083 maximized=false
+[WindowManager] resize save → x=290 y=34 w=1438 h=1083 maximized=false
+[WindowManager] resize save → x=287 y=34 w=1441 h=1083 maximized=false
+[WindowManager] resize save → x=283 y=34 w=1445 h=1083 maximized=false
+[WindowManager] resize save → x=279 y=34 w=1449 h=1083 maximized=false
+[WindowManager] resize save → x=275 y=34 w=1453 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":275,"y":34,"width":1453,"height":1083},"isMaximized":false}
+[WindowManager] resize save → x=272 y=34 w=1456 h=1083 maximized=false
+[WindowManager] resize save → x=270 y=34 w=1458 h=1083 maximized=false
+[WindowManager] resize save → x=269 y=34 w=1459 h=1083 maximized=false
+[WindowManager] resize save → x=266 y=34 w=1462 h=1083 maximized=false
+[WindowManager] resize save → x=264 y=34 w=1464 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":264,"y":34,"width":1464,"height":1083},"isMaximized":false}
+[WindowManager] resize save → x=262 y=34 w=1466 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":262,"y":34,"width":1466,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":262,"y":34,"width":1466,"height":1083},"isMaximized":false}
+[WindowManager] resize save → x=261 y=34 w=1467 h=1083 maximized=false
+[WindowManager] resize save → x=260 y=34 w=1468 h=1083 maximized=false
+[WindowManager] resize save → x=259 y=34 w=1469 h=1083 maximized=false
+[WindowManager] resize save → x=258 y=34 w=1470 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":258,"y":34,"width":1470,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":258,"y":34,"width":1470,"height":1083},"isMaximized":false}
+[WindowManager] resize save → x=257 y=34 w=1471 h=1083 maximized=false
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+[Settings] Saved: {"windowBounds":{"x":257,"y":34,"width":1471,"height":1083},"isMaximized":false}
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+11:18:06 AM [INFO] 🎵 Browsing for directory: videoLibraryPath
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+📤 Sending to renderer: log { type: 'info', message: '🎬 Starting video library scan...' }
+
+ 
